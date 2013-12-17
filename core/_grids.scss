@@ -68,12 +68,21 @@ $use-silent-classes: false;
  */
 .wrapper{
 	@extend %center;
-	@extend .soft--sides;
+
+	padding-left: 24px;
+	padding-right: 24px;
 	
 	@if $use-max-width == true {
 		@include rem(max-width, $max-grid-width);
 		
 	}
+	
+	@include mq(900px, max) {
+		padding-left: 12px;
+		padding-right: 12px;
+		@include rem(max-width, 720px);		
+	}
+	
 }
 
 
@@ -83,11 +92,15 @@ $use-silent-classes: false;
     margin:0;                       /* [2] */
     padding:0;                      /* [2] */
     margin-left:-$gutter;           /* [3] */
-    margin-right:-$gutter;           /* [3] */
+    //margin-right:-$gutter;           /* [3] */
 	
     @if $use-markup-fix != true{
         letter-spacing:-0.31em;
     }
+	
+	@include mq(900px, max) {
+	    margin-left: -$gutter/2;           /* [3] */
+	}
 	
 }
 
@@ -127,6 +140,10 @@ $use-silent-classes: false;
             letter-spacing:normal;
             word-spacing:normal;
         }
+		
+		@include mq(900px, max) {
+		    padding-left: $gutter/2;           /* [3] */
+		}
     }
 
 
