@@ -45,21 +45,21 @@
 /**
  * Add/remove margins
  */
-.push           { margin:       $base-spacing-unit!important; }
-.push--top      { margin-top:   $base-spacing-unit!important; }
-.push--right    { margin-right: $base-spacing-unit!important; }
-.push--bottom   { margin-bottom:$base-spacing-unit!important; }
-.push--left     { margin-left:  $base-spacing-unit!important; }
-.push--ends     { margin-top:   $base-spacing-unit!important; margin-bottom:$base-spacing-unit!important; }
-.push--sides    { margin-right: $base-spacing-unit!important; margin-left:  $base-spacing-unit!important; }
+.push           { margin:       $base-line-height!important; }
+.push--top      { margin-top:   $base-line-height!important; }
+.push--right    { margin-right: $base-line-height!important; }
+.push--bottom   { margin-bottom:$base-line-height!important; }
+.push--left     { margin-left:  $base-line-height!important; }
+.push--ends     { margin-top:   $base-line-height!important; margin-bottom:$base-line-height!important; }
+.push--sides    { margin-right: $base-line-height!important; margin-left:  $base-line-height!important; }
 
-.push-half          { margin:       $half-spacing-unit!important; }
-.push-half--top     { margin-top:   $half-spacing-unit!important; }
-.push-half--right   { margin-right: $half-spacing-unit!important; }
-.push-half--bottom  { margin-bottom:$half-spacing-unit!important; }
-.push-half--left    { margin-left:  $half-spacing-unit!important; }
-.push-half--ends    { margin-top:   $half-spacing-unit!important; margin-bottom:$half-spacing-unit!important; }
-.push-half--sides   { margin-right: $half-spacing-unit!important; margin-left:  $half-spacing-unit!important; }
+.push-half          { margin:       $base-line-height!important; }
+.push-half--top     { margin-top:   $base-line-height!important; }
+.push-half--right   { margin-right: $base-line-height!important; }
+.push-half--bottom  { margin-bottom:$base-line-height!important; }
+.push-half--left    { margin-left:  $base-line-height!important; }
+.push-half--ends    { margin-top:   $base-line-height!important; margin-bottom:$base-line-height!important; }
+.push-half--sides   { margin-right: $base-line-height!important; margin-left:  $base-line-height!important; }
 
 .flush          { margin:       0!important; }
 .flush--top     { margin-top:   0!important; }
@@ -72,21 +72,21 @@
 /**
  * Add/remove paddings
  */
-.soft           { padding:       $base-spacing-unit!important; }
-.soft--top      { padding-top:   $base-spacing-unit!important; }
-.soft--right    { padding-right: $base-spacing-unit!important; }
-.soft--bottom   { padding-bottom:$base-spacing-unit!important; }
-.soft--left     { padding-left:  $base-spacing-unit!important; }
-.soft--ends     { padding-top:   $base-spacing-unit!important; padding-bottom:$base-spacing-unit!important; }
-.soft--sides    { padding-right: $base-spacing-unit!important; padding-left:  $base-spacing-unit!important; }
+.soft           { padding:       $base-line-height!important; }
+.soft--top      { padding-top:   $base-line-height!important; }
+.soft--right    { padding-right: $base-line-height!important; }
+.soft--bottom   { padding-bottom:$base-line-height!important; }
+.soft--left     { padding-left:  $base-line-height!important; }
+.soft--ends     { padding-top:   $base-line-height!important; padding-bottom:$base-line-height!important; }
+.soft--sides    { padding-right: $base-line-height!important; padding-left:  $base-line-height!important; }
 
-.soft-half           { padding:       $half-spacing-unit!important; }
-.soft-half--top      { padding-top:   $half-spacing-unit!important; }
-.soft-half--right    { padding-right: $half-spacing-unit!important; }
-.soft-half--bottom   { padding-bottom:$half-spacing-unit!important; }
-.soft-half--left     { padding-left:  $half-spacing-unit!important; }
-.soft-half--ends     { padding-top:   $half-spacing-unit!important; padding-bottom:$half-spacing-unit!important; }
-.soft-half--sides    { padding-right: $half-spacing-unit!important; padding-left:  $half-spacing-unit!important; }
+.soft-half           { padding:        $base-line-height / 2!important; }
+.soft-half--top      { padding-top:    $base-line-height / 2!important; }
+.soft-half--right    { padding-right:  $base-line-height / 2!important; }
+.soft-half--bottom   { padding-bottom: $base-line-height / 2!important; }
+.soft-half--left     { padding-left:   $base-line-height / 2!important; }
+.soft-half--ends     { padding-top:    $base-line-height / 2!important; padding-bottom: $base-line-height / 2!important; }
+.soft-half--sides    { padding-right:  $base-line-height / 2!important; padding-left:   $base-line-height / 2!important; }
 
 .hard           { padding:       0!important; }
 .hard--top      { padding-top:   0!important; }
@@ -101,12 +101,12 @@
  * Pull items full width of `.island` parents.
  */
 .full-bleed{
-    margin-right:-$base-spacing-unit!important;
-    margin-left: -$base-spacing-unit!important;
+    margin-right:-$base-line-height !important;
+    margin-left: -$base-line-height !important;
 
     .islet &{
-        margin-right:-($half-spacing-unit)!important;
-        margin-left: -($half-spacing-unit)!important;
+        margin-right:-($base-line-height / 2)!important;
+        margin-left: -($base-line-height / 2)!important;
     }
 }
 

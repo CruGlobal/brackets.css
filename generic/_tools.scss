@@ -1,8 +1,16 @@
 /*------------------------------------*\
-    $FUNCTIONS
+    $TOOLS
 \*------------------------------------*/
+/**
+ * We will begin by importing functions that will be used in the
+ * framework. There is no need to change any of these functions
+ */
+
 
 $rem-base: 			16px !default;
+
+$magic-number:        $base-line-height;
+$magic-ratio:         $base-line-height / $base-font-size;
 
 @function lower-bound($range){
   @if length($range) <= 0 {
@@ -20,12 +28,12 @@ $rem-base: 			16px !default;
 }
 
 
-@function strip-unit($num) {
+@function strip-units($num) {
 	@return $num / ($num * 0 + 1);
 }
 
 @function convert-to-rem($value, $base-value: $rem-base)  {
-  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  $value: strip-units($value) / strip-units($base-value) * 1rem;
   @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
   @return $value;
 }
@@ -49,8 +57,8 @@ $rem-base: 			16px !default;
 
 
 @mixin font-size($sizeValue: 16){
-	font-size: strip-unit($sizeValue) + px;
-	font-size: strip-unit($sizeValue / 16) + rem;
+	font-size: strip-units($sizeValue) + px;
+	font-size: strip-units($sizeValue / 16) + rem;
 }
 
 @mixin rem($prop, $sizeValue: 16){

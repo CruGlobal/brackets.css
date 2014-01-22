@@ -5,8 +5,9 @@
 *.swo
 
 style.scss
-brackets.min.css
 style.min.css
+brackets.min.css
 
 index.html
 demo.html
+

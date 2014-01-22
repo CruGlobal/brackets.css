@@ -2,16 +2,39 @@
     $SHARED
 \*------------------------------------*/
 /**
+ * A lot of elements need to share some declarations (mainly for
+ * vertical rhythm), so we `@extend` some silent classes.
+ */
+%reset {
+    margin:  0;
+    padding: 0;
+}
+
+%vertical-rhythm {
+    @extend %reset;
+    margin-bottom: $magic-number;
+    margin-bottom: $magic-ratio + rem;
+}
+
+
+
+
+
+/**
  * Where `margin-bottom` is concerned, this value will be the same as the
  * base line-height. This allows us to keep a consistent vertical rhythm.
  * As per: csswizardry.com/2012/06/single-direction-margin-declarations
  * 
- * I am using the rem mixin to quickly generate the margins with their px
- * fallbacks. 
- * By default $base-spacing-unit is set to 24px
+ * We will be using the above silent classes to quickly remove default 
+ * margin and padding and quickly apply margin-bottom to the element with
+ * default rem units and px fallbacks. 
+ * 
+ * By default $base-line-height is set to 24px, therefore so is the
+ * $magic-number.
  * Therefore, $half-spacing-unit is 12px and $double-spacing-unit is 48px 
  *
  */
+
 /**
  * Base elements
  */
@@ -28,10 +51,10 @@ pre, hr,
 .media,
 .island,
 .islet{
-	@include rem(margin-bottom, $base-spacing-unit); 
+	@extend %vertical-rhythm; 
 
     .islet &{
-		@include rem(margin-bottom, $half-spacing-unit );
+		@include half-spacing(margin-bottom);
 	}
 }
 
@@ -39,7 +62,8 @@ pre, hr,
  * Doubled up `margin-bottom` helper class.
  */
 .landmark{
-	@include rem(margin-bottom, $double-spacing-unit);   
+	@extend %vertical-rhythm; 
+	@include double-spacing(margin-bottom);   
 }
 
 
@@ -48,7 +72,8 @@ pre, hr,
  * treatment regarding vertical rhythm.
  */
 hr{
-	@include rem(margin-top, $base-spacing-unit);
+	@extend %vertical-rhythm; 
+	@include spacing(margin-top);
 }
 
 
@@ -57,5 +82,6 @@ hr{
  * by a consistent amount. Define that amount once, here.
  */
 ul,ol,dd{
-	@include rem(margin-left, $double-spacing-unit);
+	@extend %vertical-rhythm; 
+	@include double-spacing(margin-left);
 }

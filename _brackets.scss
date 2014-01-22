@@ -8,6 +8,7 @@
 
 // Core variables and mixins
 @import "defaults";
+@import "generic/tools";
 @import "generic/mixins";
 
 // Reset
@@ -17,11 +18,12 @@
 
 // Core CSS
 @import "core/base";
+@import "generic/clearfix";
+@import "core/shared";
 @import "core/headings";
 @import "core/paragraphs";
 @import "core/lists";
 @import "core/quotes";
-@import "core/shared";
 @import "core/images";
 
 @import "core/grids";
