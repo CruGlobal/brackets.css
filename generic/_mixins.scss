@@ -95,13 +95,13 @@ $query-unit: 16px;
         .lt-ie9 & {
             @content;
         }
-        @media screen and (#{$query1}-#{$query2}: strip-unit($point) / strip-unit($query-unit) + em) {
+        @media screen and (#{$query1}-#{$query2}: strip-units($point) / strip-units($query-unit) + em) {
             @content;
         }
     }
 
     @else {
-        @media screen and (#{$query1}-#{$query2}: strip-unit($point) / strip-unit($query-unit) + em) {
+        @media screen and (#{$query1}-#{$query2}: strip-units($point) / strip-units($query-unit) + em) {
             @content;
         }
     }
@@ -135,12 +135,12 @@ $query-unit: 16px;
 }
 
 @mixin rem($property, $size-value){
-	#{$property}: strip-unit($size-value) * 1px;
-	#{$property}: strip-unit($size-value / $base-font-size) * 1rem;
+	#{$property}: strip-units($size-value) * 1px;
+	#{$property}: strip-units($size-value / $base-font-size) * 1rem;
 }
 
 @mixin em($property, $size-value){
-	#{$property}: strip-unit($size-value / 16 ) * 1em;
+	#{$property}: strip-units($size-value / 16 ) * 1em;
 }
 
 

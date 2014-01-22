@@ -8,6 +8,7 @@
 
 /**
  * 1. Hang the opening quote of the blockquote.
+ * .4em is roughly equal to the width of the opening “ that we wish to hang.
  */
 blockquote {
     text-indent: -0.41em; /* [1] */
@@ -27,16 +28,11 @@ blockquote {
  */
 blockquote{
     quotes: "“" "”";
-	
-    /**
-     * .4em is roughly equal to the width of the opening “ that we wish to hang.
-     */
-    text-indent: -0.41em;
 
 	font-style: $blockquote-font-style;
 
 	@include half-spacing(padding-left);
-	@include font-size($base-font-size * 1.25);
+	@include font-size(floor($base-font-size * 1.25));
 
     p {
 

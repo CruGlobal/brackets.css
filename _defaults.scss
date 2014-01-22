@@ -39,12 +39,6 @@ $global-border-box:        true !default;
     $BASE
 \*------------------------------------*/
 /**
- * Setting up a nice foundation
- */
-$base-font-size:           16px !default;
-$base-line-height:         24px !default;
-
-/**
  * Base font family
  */
 $base-font-family:         sans-serif !default;
@@ -94,7 +88,7 @@ $header-text-rendering:    optimizeLegibility !default;
 	/* Header sizes */
 	$h1-font-size:         48px !default; 
 	$h2-font-size:         36px !default; 
-	$h3-font-size:         20px !default; 
+	$h3-font-size:         30px !default; 
 	$h4-font-size:         24px !default; 
 	$h5-font-size:         20px !default; 
 	$h6-font-size:         18px !default;

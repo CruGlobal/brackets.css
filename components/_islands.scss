@@ -17,7 +17,7 @@
 .island,
 .islet{
     display:block;
-    @extend .cf;
+    @extend %cf;
 }
 .island{
 	@include spacing(padding);

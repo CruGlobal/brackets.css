@@ -5,5 +5,8 @@
 *.swo
 
 brackets.min.css
+style.scss
+style.min.scss
+
 index.html
 demo.html

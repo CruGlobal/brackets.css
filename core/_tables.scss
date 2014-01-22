@@ -45,7 +45,6 @@ th, td {
 		@extend %table__item;
 		
 	    line-height: $magic-ratio;
-	    border-top: 1px solid $base-ui-color;
 	}
 	
 		.table__content{
