@@ -13,6 +13,7 @@
  * Baseline styles
  */
 table {
+<<<<<<< HEAD
 	@extend %vertical-rhythm;
 	max-width: 100%;
 	width: 100%; /* [1] */
@@ -32,10 +33,35 @@ table {
 	
 	
 	
+=======
+	max-width: 100%;
+	width: 100%; /* [1] */
+}
+
+	.table, 
+	%table {
+		padding: 0;
+	  	list-style: none;
+	  	display: table; 
+	  	table-layout: fixed; /* [2] */
+	}	
+
+
+
+
+
+/**
+ * The cells
+ */
+th {
+	text-align: left;
+}
+>>>>>>> master
 	
 	/**
 	 * The cells
      */
+<<<<<<< HEAD
 	th {
 		text-align: left;
 	}
@@ -48,6 +74,18 @@ table {
 	    line-height: $magic-ratio;
 		
 		@include half-spacing(padding);
+=======
+	.table__item, 
+	%table__item{
+		 display: table-cell; /* [3] */
+	}
+	
+	th, td, 
+	.table__item,  
+	%table__item{
+	    padding: $base-spacing-unit / 2;
+	    line-height: $base-spacing-unit;
+>>>>>>> master
 	}
 	
 		.table__content{
