@@ -3,3 +3,6 @@
 .sass-cache/
 *.swp
 *.swo
+
+index.html
+demo.html
