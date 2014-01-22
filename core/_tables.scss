@@ -1,54 +1,58 @@
 /*------------------------------------*\
     $TABLES
 \*------------------------------------*/
+
+/**
+ * The table object
+ * 1. Required to make the tabs fill their container.
+ * 2. This is the magic bit; make all children occupy equal width.
+ * 3. Make each tab pack up horizontally.
+ * 4. Ensure the hit area covers the whole tab.
+ */
+/**
+ * Baseline styles
+ */
 table {
 	@extend %vertical-rhythm;
-	width: 100%;
 	max-width: 100%;
+	width: 100%; /* [1] */
 	
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-th, td {
-	text-align: left;
+	.table, 
+	%table {
+		padding: 0;
+	  	list-style: none;
+	  	display: table; 
+	  	table-layout: fixed; /* [2] */
+	}	
 	
-	@include half-spacing(padding);
-}
-
-/**
- * The table object
- * 1. This is the magic bit; make all children occupy equal width.
- * 2. Required to make the tabs fill their container.
- * 3. Make each tab pack up horizontally.
- * 4. Ensure the hit area covers the whole tab.
- */
-
-// Baseline styles
-
-.table {	
-	display: table; 
-	table-layout: fixed; /* [1] */
 	
-  	list-style: none;
-  	width: 100%; /* [2] */
-}	
+	
+	
 	
 	/**
 	 * The cells
      */
-	.table__item, %table__item{
-		 display: table-cell; /* [3] */
+	th {
+		text-align: left;
 	}
 	
-	th, td{
+	th, td, 
+	.table__item, 
+	%table__item{
 		@extend %table__item;
 		
 	    line-height: $magic-ratio;
+		
+		@include half-spacing(padding);
 	}
 	
 		.table__content{
 			display: block; /* [4] */
 		}
+
 
 
