@@ -1,42 +1,54 @@
 /*------------------------------------*\
     $TABLES
 \*------------------------------------*/
-table {
-	max-width: 100%;
-}
-th {
-	text-align: left;
-}
 
 /**
  * The table object
- * 1. This is the magic bit; make all children occupy equal width.
- * 2. Required to make the tabs fill their container.
+ * 1. Required to make the tabs fill their container.
+ * 2. This is the magic bit; make all children occupy equal width.
  * 3. Make each tab pack up horizontally.
  * 4. Ensure the hit area covers the whole tab.
  */
+/**
+ * Baseline styles
+ */
+table {
+	max-width: 100%;
+	width: 100%; /* [1] */
+}
 
-// Baseline styles
+	.table, 
+	%table {
+		padding: 0;
+	  	list-style: none;
+	  	display: table; 
+	  	table-layout: fixed; /* [2] */
+	}	
 
-.table {
-	padding: 0;
-  	list-style: none;
-  	display: table; 
-  	table-layout: fixed; /* [1] */
-  	width: 100%; /* [2] */
-}	
+
+
+
+
+/**
+ * The cells
+ */
+th {
+	text-align: left;
+}
 	
 	/**
 	 * The cells
      */
-	.table__item{
+	.table__item, 
+	%table__item{
 		 display: table-cell; /* [3] */
 	}
 	
-	.table__item, th, td{
+	th, td, 
+	.table__item,  
+	%table__item{
 	    padding: $base-spacing-unit / 2;
 	    line-height: $base-spacing-unit;
-	    border-top: 1px solid $base-ui-color;
 	}
 	
 		.table__content{
