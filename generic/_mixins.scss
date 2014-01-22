@@ -3,41 +3,57 @@
 \*------------------------------------*/
 /**
  * These mixins are for the library to use only, you should not need to modify
- * them at all.
- *
- * Enclose a block of code with a media query as named in `$breakpoints`.
+ * them at all. 
  */
-@mixin grid-media-query($media-query){
-    $breakpoint-found: false;
 
-    @each $breakpoint in $breakpoints{
-        $name: nth($breakpoint, 1);
-        $declaration: nth($breakpoint, 2);
 
-        @if $media-query == $name and $declaration{
-            $breakpoint-found: true;
-
-            @media only screen and #{$declaration}{
-                @content;
-            }
-        }
-    }
-
-    @if $breakpoint-found == false{
-        @warn "Breakpoint ‘#{$media-query}’ does not exist"
-    }
-}
 
 
 /**
- * Drop relative positioning into silent classes which can’t take advantage of
- * the `[class*="push--"]` and `[class*="pull--"]` selectors.
+ * Quickly generate a font-size in rems, with a pixel fallback, based on the
+ * value we pass into the mixin, e.g.:
+ *
+ * h1 {
+ *     @include font-size(24px);
+ * }
  */
-@mixin silent-relative(){
-    @if $use-silent-classes == true{
-        position:relative;
+@mixin font-size($font-size, $line-height: true) {
+    font-size: $font-size;
+    font-size: ($font-size / $base-font-size) * 1rem;
+
+    @if $line-height == true {
+        line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
     }
+
 }
+
+
+
+
+/**
+ * Space elements by an amount based on your magic number. Pass in the property
+ * to be indented as a paramater, e.g.:
+ *
+ * pre {
+ *    @include typecsset-space(padding-left);
+ * }
+ */
+@mixin spacing($property) {
+    #{$property}: $magic-number;
+    #{$property}: $magic-ratio + rem;
+}
+
+@mixin double-spacing($property) {
+    #{$property}: 2 * $magic-number;
+    #{$property}: 2 * $magic-ratio + rem;
+}
+
+@mixin half-spacing($property) {
+    #{$property}: $magic-number / 2;
+    #{$property}: ($magic-ratio / 2) + rem;
+}
+
+
 
 
 /**
@@ -116,16 +132,6 @@ $query-unit: 16px;
         -ms-#{$property}:$value;
          -o-#{$property}:$value;
             #{$property}:$value;
-}
-
-
-@mixin font-size($font-size, $line-height:true){
-    font-size: strip-unit($font-size) * 1px;
-    font-size: strip-unit($font-size / $base-font-size) * 1rem;
-	
-    @if $line-height == true{
-        line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
-    }
 }
 
 @mixin rem($property, $size-value){
@@ -280,6 +286,9 @@ $query-unit: 16px;
 }
 
 
+
+
+
 /**
  * Writes the typical link, button in one go
  * Includes active and focus for accessibility 
@@ -290,6 +299,48 @@ $query-unit: 16px;
 	&:hover, &:focus, &:active{
 		@content;
 	}
+}
+
+
+
+
+
+/**
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+@mixin grid-media-query($media-query){
+    $breakpoint-found: false;
+
+    @each $breakpoint in $breakpoints{
+        $name: nth($breakpoint, 1);
+        $declaration: nth($breakpoint, 2);
+
+        @if $media-query == $name and $declaration{
+            $breakpoint-found: true;
+
+            @media only screen and #{$declaration}{
+                @content;
+            }
+        }
+    }
+
+    @if $breakpoint-found == false{
+        @warn "Breakpoint ‘#{$media-query}’ does not exist";
+    }
+}
+
+
+
+
+
+/**
+ * Drop relative positioning into silent classes which can’t take advantage of
+ * the `[class*="push--"]` and `[class*="pull--"]` selectors.
+ */
+@mixin silent-relative(){
+    @if $use-silent-classes == true{
+        position:relative;
+    }
 }
 
 

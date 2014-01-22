@@ -4,6 +4,33 @@
 
 $rem-base: 			16px !default;
 
+$magic-number:        $base-line-height;
+$magic-ratio:         $base-line-height / $base-font-size;
+
+
+
+
+
+/**
+ * A lot of elements need to share some declarations (mainly for
+ * vertical rhythm), so we `@extend` some silent classes.
+ */
+%reset {
+    margin:  0;
+    padding: 0;
+}
+
+%vertical-rhythm {
+    @extend %reset;
+    margin-bottom: $magic-number;
+    margin-bottom: $magic-ratio + rem;
+}
+
+
+
+
+
+
 @function lower-bound($range){
   @if length($range) <= 0 {
     @return 0;
