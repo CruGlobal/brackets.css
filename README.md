@@ -5,8 +5,9 @@
 
 It is very simple to get started. Download the Sass files, `@import` it into your project and _go!_
 
-```scss 
+```scss
 [Your own CSS and variable declarations]
+
 $base-font-size:      18px;
 $base-line-height:    28px;
 
