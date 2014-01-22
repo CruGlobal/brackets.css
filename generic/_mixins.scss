@@ -352,7 +352,7 @@ $query-unit: 16px;
  * @include vertical-calc(1, 12) {}
  *
  */
-$base-vertical-grid: $base-spacing-unit / 4;
+$base-vertical-grid: $magic-number / 4;
 
 @mixin vertical-calc($from: 1, $to: 12, $grid: $base-vertical-grid){
     @if $from >= 1 and $to <= 12{

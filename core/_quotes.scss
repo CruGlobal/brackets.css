@@ -9,31 +9,26 @@ $close-quote:   \201D;
  * Big up @boblet: html5doctor.com/blockquote-q-cite
  */
 
+
 /**
- * Inline quotes.
+ * 1. Hang the opening quote of the blockquote.
  */
-q{
-    quotes: "\2018" "\2019" "#{$open-quote}" "#{$close-quote}";
-
-    &:before{
-        content: "\2018";
-        content: open-quote;
-    }
-    &:after{
-        content: "\2019";
-        content: close-quote;
-    }
-
-    q:before{
-        content: "\201C";
-        content: open-quote;
-    }
-    q:after{
-        content: "\201D";
-        content: close-quote;
-    }
+blockquote {
+    text-indent: -0.41em; /* [1] */
 }
 
+
+/**
+ * Set up quote marks on quoting elements. This is very English-based, so we are
+ * using “, ”, ‘, and ’ quotes.
+ *
+   <blockquote>
+       <p>Insanity: doing the same thing over and over again and expecting
+       different results.</p>
+       <b class=source>Albert Einstein</b>
+   </blockquote>
+ *
+ */
 blockquote{
     quotes: "#{$open-quote}" "#{$close-quote}";
 
@@ -60,33 +55,49 @@ blockquote{
     }
 }
 
-/**
- *
-   <blockquote>
-       <p>Insanity: doing the same thing over and over again and expecting
-       different results.</p>
-       <b class=source>Albert Einstein</b>
-   </blockquote>
- *
- */
 blockquote{
     /**
      * .4em is roughly equal to the width of the opening “ that we wish to hang.
      */
     text-indent: -0.41em;
-	font-size: $base-font-size * 1.25;
-	line-height: 1.2;
 	border-left: $blockquote-border;
+	
 	color: #999;
 	font-style: $blockquote-font-style;
 
-	@include font-size($base-font-size * 1.25, false);
-	@include rem(padding-left, $half-spacing-unit);
+	@include half-spacing(padding-left);
+	@include font-size($base-font-size * 1.25);
 
     p:last-of-type{
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 }
+
+/**
+ * Inline quotes.
+ */
+q{
+    quotes: "\2018" "\2019" "#{$open-quote}" "#{$close-quote}";
+
+    &:before{
+        content: "\2018";
+        content: open-quote;
+    }
+    &:after{
+        content: "\2019";
+        content: close-quote;
+    }
+
+    q:before{
+        content: "\201C";
+        content: open-quote;
+    }
+    q:after{
+        content: "\201D";
+        content: close-quote;
+    }
+}
+
 
 .source{
     display: block;

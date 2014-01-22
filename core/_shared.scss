@@ -83,5 +83,5 @@ hr{
  */
 ul,ol,dd{
 	@extend %vertical-rhythm; 
-	@include double-pacing(margin-left);
+	@include double-spacing(margin-left);
 }
