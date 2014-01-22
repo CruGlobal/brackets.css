@@ -3,7 +3,7 @@
 
 ##Implementation
 
-It is very simple to get started. Download the Sass files, `@import` it into your project and _go!_
+It is very simple to get started. Download the Sass files, `@import` it into your project and _go!_.
 
 ```scss
 
