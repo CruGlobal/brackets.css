@@ -1,10 +1,6 @@
 /*------------------------------------*\
     $QUOTES
 \*------------------------------------*/
-
-$open-quote:    \201C;
-$close-quote:   \201D;
-
 /**
  * Big up @boblet: html5doctor.com/blockquote-q-cite
  */
@@ -30,80 +26,89 @@ blockquote {
  *
  */
 blockquote{
-    quotes: "#{$open-quote}" "#{$close-quote}";
-
-    p:before{
-        content: "#{$open-quote}";
-        content: open-quote;
-    }
-    p:after{
-        content: "";
-        content: no-close-quote;
-    }
-    p:last-of-type:after{
-        content: "#{$close-quote}";
-        content: close-quote;
-    }
-
-    q:before{
-        content: "\2018";
-        content: open-quote;
-    }
-    q:after{
-        content: "\2019";
-        content: close-quote;
-    }
-}
-
-blockquote{
+    quotes: "“" "”";
+	
     /**
      * .4em is roughly equal to the width of the opening “ that we wish to hang.
      */
     text-indent: -0.41em;
-	border-left: $blockquote-border;
-	
-	color: #999;
+
 	font-style: $blockquote-font-style;
 
 	@include half-spacing(padding-left);
 	@include font-size($base-font-size * 1.25);
 
-    p:last-of-type{
-        margin-bottom: 0;
-    }
+    p {
+
+        &:before {
+            content: "“";
+            content: open-quote;
+        }
+
+        &:after {
+            content: "";
+            content: no-close-quote;
+        }
+
+        &:last-of-type{
+        	 
+			margin-bottom: 0;
+			
+			&:after {
+		        content: "”";
+		        content: close-quote;
+			}
+			
+        }
+	}
+
 }
+
+	.source{
+	    display: block;
+	    text-indent: 0;
+
+	    &:before{
+	        content: "\2014";
+	    }
+	}
+
+
+
+
 
 /**
  * Inline quotes.
  */
-q{
-    quotes: "\2018" "\2019" "#{$open-quote}" "#{$close-quote}";
+q {
+    quotes: "‘" "’" "“" "”";
 
-    &:before{
-        content: "\2018";
+    &:before {
+        content: "‘";
         content: open-quote;
     }
-    &:after{
-        content: "\2019";
+
+    &:after {
+        content: "’";
         content: close-quote;
     }
 
-    q:before{
-        content: "\201C";
+    q:before {
+        content: "“";
         content: open-quote;
     }
+
     q:after{
-        content: "\201D";
+        content: "”";
         content: close-quote;
     }
-}
 
-
-.source{
-    display: block;
-    text-indent: 0;
-
-    &:before{
-        content: "\2014";
+    /**
+     * If an element opens with an inline quote, let’s hang that.
+     */
+    &:first-child {
+        display: inline-block;
+        text-indent: -0.22em;
     }
+
 }

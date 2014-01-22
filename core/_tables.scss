@@ -2,10 +2,18 @@
     $TABLES
 \*------------------------------------*/
 table {
+	@extend %vertical-rhythm;
+	width: 100%;
 	max-width: 100%;
+	
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-th {
+
+th, td {
 	text-align: left;
+	
+	@include half-spacing(padding);
 }
 
 /**
@@ -18,24 +26,25 @@ th {
 
 // Baseline styles
 
-.table {
-	padding: 0;
+.table {	
+	display: table; 
+	table-layout: fixed; /* [1] */
+	
   	list-style: none;
-  	display: table; 
-  	table-layout: fixed; /* [1] */
   	width: 100%; /* [2] */
 }	
 	
 	/**
 	 * The cells
      */
-	.table__item{
+	.table__item, %table__item{
 		 display: table-cell; /* [3] */
 	}
 	
-	.table__item, th, td{
-	    padding: $base-spacing-unit / 2;
-	    line-height: $base-spacing-unit;
+	th, td{
+		@extend %table__item;
+		
+	    line-height: $magic-ratio;
 	    border-top: 1px solid $base-ui-color;
 	}
 	
