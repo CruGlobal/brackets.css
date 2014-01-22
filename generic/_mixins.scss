@@ -134,7 +134,6 @@ $query-unit: 16px;
 }
 
 @mixin em($property, $size-value){
-	#{$property}: strip-unit($size-value) * 1px;
 	#{$property}: strip-unit($size-value / 16 ) * 1em;
 }
 
