@@ -21,5 +21,5 @@ $base-line-height:    28px;
 
 Due to the nature of unitless and rem values, you will end up with a lot of additional numbers instead of rounded integers (e.g. `line-height: 1.333;` instead of `line-height: 24px;`).  To ensure that browsers interperet these values as close as possible to the pixel value, causing rounding errors, I reccommend compiling your Sass with the `--precision` flag set to `7`, e.g.:
 
-    sass --watch typecsset.scss:typecsset.css --style expanded --precision 7
+    sass --watch brackets.scss:brackets.min.css --style compressed --precision 7
 

@@ -248,7 +248,7 @@ $btn-default-border:         darken($base-ui-color, 5%) !default;
 /**
  * Would you like to show a baseline grid? This is handy during development.
  */ 
-$show-baseline:       		 false !default;
+$show-baseline:       		 true !default;
 
 $use-buttons:                true !default;
 $use-islands:                true !default;

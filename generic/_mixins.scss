@@ -28,6 +28,23 @@
 }
 
 
+@mixin rem($prop, $sizeValue: 16){
+	#{$prop}: ($sizeValue) + px;
+	#{$prop}: ($sizeValue / 16) + rem;
+}
+
+/**
+ * Box Sizing
+ */
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+	  -ms-box-sizing: $boxmodel;
+	   -o-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+
 
 
 /**
@@ -35,7 +52,7 @@
  * to be indented as a paramater, e.g.:
  *
  * pre {
- *    @include typecsset-space(padding-left);
+ *    @include spacing(padding-left);
  * }
  */
 @mixin spacing($property) {
