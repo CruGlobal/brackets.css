@@ -54,14 +54,3 @@ $magic-ratio:         $base-line-height / $base-font-size;
 @function em-calc($values){
   @return rem-calc($values);
 }
-
-
-@mixin font-size($sizeValue: 16){
-	font-size: strip-units($sizeValue) + px;
-	font-size: strip-units($sizeValue / 16) + rem;
-}
-
-@mixin rem($prop, $sizeValue: 16){
-	#{$prop}: ($sizeValue) + px;
-	#{$prop}: ($sizeValue / 16) + rem;
-}

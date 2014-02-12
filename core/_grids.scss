@@ -66,41 +66,33 @@ $use-silent-classes: false;
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.wrapper{
+.wrapper, %wrapper{
 	@extend %center;
 
-	padding-left: 24px;
-	padding-right: 24px;
+	@include rem(padding-left,  $magic-number);
+	@include rem(padding-right, $magic-number);
 	
 	@if $use-max-width == true {
 		@include rem(max-width, $max-grid-width);
 		
 	}
 	
-	@include mq(900px, max) {
-		padding-left: 12px;
-		padding-right: 12px;
-		@include rem(max-width, 720px);		
-	}
-	
 }
 
 
 #{$class-type}grid{
-	@include clearfix;
-    list-style:none;                /* [1] */
-    margin:0;                       /* [2] */
-    padding:0;                      /* [2] */
-    margin-left:-$gutter;           /* [3] */
-    //margin-right:-$gutter;           /* [3] */
+	@extend %cf;
+	
+	
+    list-style: none;                           /* [1] */
+    margin: 0;                                  /* [2] */
+    padding: 0;                                 /* [2] */
+	
+	@include rem(margin-left, -$magic-number);  /* [3] */
 	
     @if $use-markup-fix != true{
         letter-spacing:-0.31em;
     }
-	
-	@include mq(900px, max) {
-	    margin-left: -$gutter/2;           /* [3] */
-	}
 	
 }
 
@@ -117,35 +109,32 @@ $use-silent-classes: false;
 
     /**
      * 1. Cause columns to stack side-by-side.
-     * 2. Space columns apart.
-     * 3. Align columns to the tops of each other.
-     * 4. Full-width unless told to behave otherwise.
+     *    - Not implemented at the moment due to legacy support
+     *
+     * 2. Align columns to the tops of each other.
+     * 3. Full-width unless told to behave otherwise.
+     * 4. Space columns apart.
      * 5. Required to combine fluid widths and fixed gutters.
      */
     #{$class-type}grid__item{
 		
-       // display:inline-block;           /* [1] */
+       // display:inline-block;                     /* [1] */
 	    float: left;
-        padding-left:$gutter;           /* [2] */
-        vertical-align:top;             /* [3] */
+        vertical-align:top;                         /* [2] */
 		
-		@include spacing(padding-left);
-		@include spacing(padding-right);
 		
         @if $mobile-first == true{
-            width:100%;                 /* [4] */
+            width:100%;                             /* [3] */
         }
-        -webkit-box-sizing:border-box;  /* [5] */
-           -moz-box-sizing:border-box;  /* [5] */
-                box-sizing:border-box;  /* [5] */
+		
+        @include rem(padding-left,  $magic-number); /* [4] */
+		@include box-sizing(border-box);            /* [5] */
+				
         @if $use-markup-fix != true{
             letter-spacing:normal;
             word-spacing:normal;
         }
 		
-		@include mq(900px, max) {
-		    padding-left: $gutter/2;           /* [3] */
-		}
     }
 
 
