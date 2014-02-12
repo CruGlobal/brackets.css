@@ -192,20 +192,3 @@
 	width: 100%;
 	text-align: center;
 }
-
-
-
-/**
- * Attatch peices of content to each other
- */
-.attached--top{
-	margin-bottom: 0;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-.attached--bottom{
-	margin-top: 0;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
-}
