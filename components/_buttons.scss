@@ -14,7 +14,7 @@ input[type="submit"]{
 	border-color: $btn-default-border;
 	
 	color: $btn-default-color;
-	line-height: $paragraph-line-height;
+	line-height: ceil($btn-font-size / $btn-default-min-height) * ($btn-default-min-height / $btn-font-size);	
 	text-align: center;
 	vertical-align: middle;
 	
@@ -22,8 +22,11 @@ input[type="submit"]{
 	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
 	white-space: nowrap;
 	
-	@include rem-calc(min-height, 19px);
-	@include rem-calc(padding, 6px 26px);
+	@include font-size($btn-font-size, false);
+	
+	@include rem-calc(min-height, $btn-default-min-height);
+	
+	@include rem-calc(padding, 0 26px);
 	@include rem-calc(margin, 0 8px 4px 0);
 	@include rem-calc(border-radius, $base-border-radius);
 	

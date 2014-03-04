@@ -230,6 +230,8 @@ $link-font-color-hover:        darken($base-accent-color, 5%) !default;
  * is to not impose style. Feel free to add more variables. I have included 
  * a mixin to help you generate these easily
  */
+$btn-font-size:                16px;
+$btn-default-min-height:       40px;
 $btn-default-color:            $base-font-color !default;
 $btn-default-bg:               $base-ui-color !default;
 $btn-default-border:           darken($base-ui-color, 5%) !default;
