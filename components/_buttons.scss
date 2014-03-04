@@ -1,32 +1,42 @@
 @if $use-buttons == true{
 
-.button {
-  	display: inline-block;
- 	max-width: 100%;
-	min-width: 80px;
+button, 
+%button, 
+.button, 
+input[type="button"], 
+input[type="submit"]{
+	display: inline-block;
 	
-  	padding: 6px 12px; 
-  	margin-bottom: 0; // For input.btn
+	max-width: 100%;
 	
-	@include font-size(16px);  
+	background-color: $btn-default-bg;
+	border: 2px solid;
+	border-color: $btn-default-border;
+	
+	color: $btn-default-color;
 	line-height: $paragraph-line-height;
 	text-align: center;
 	vertical-align: middle;
+	
 	cursor: pointer;
 	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-	border: 2px solid transparent;
-	border-radius: $base-border-radius;
 	white-space: nowrap;
-  
-	background-color: $base-ui-color;
-		@include user-select(none);
-
+	
+	@include rem-calc(min-height, 19px);
+	@include rem-calc(padding, 6px 26px);
+	@include rem-calc(margin, 0 8px 4px 0);
+	@include rem-calc(border-radius, $base-border-radius);
+	
+	@include vendor(appearance, none);
+	@include user-select(none);
+	
 	&:focus {
 		@include tab-focus;
 	}
-
+	
 	&:hover,
 	&:focus {
+		color: $btn-default-color;
 		background-color: darken($base-ui-color, 10%);
 		text-decoration: none;
 	}
@@ -37,6 +47,7 @@
       background-image: none;
     }
 
+
     &.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -44,12 +55,6 @@
       pointer-events: none; // Future-proof disabling of clicks
       @include opacity(.65);
     }
-  
 }
-
-
-
-
-
 
 } 
