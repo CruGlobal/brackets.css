@@ -40,7 +40,7 @@ input[type="submit"]{
 	&:hover,
 	&:focus {
 		color: $btn-default-color;
-		background-color: darken($base-ui-color, 10%);
+		background-color: darken($btn-default-bg, 10%);
 		text-decoration: none;
 	}
 	
