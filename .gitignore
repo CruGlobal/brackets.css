@@ -9,6 +9,4 @@ config.codekit
 style.scss
 style.min.css
 brackets.min.css
-index.html
-demo.html
 
