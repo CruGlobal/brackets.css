@@ -227,7 +227,8 @@
 	}
 	
 	button[disabled],
-	input[disabled]{	
+	input[disabled], 
+	.btn--disabled{	
 		&, 
 		&:hover, 
 		&:active, 
