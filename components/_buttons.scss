@@ -165,7 +165,7 @@
 	 */
 	%btn--inactive{
         background-color:#ddd;
-        color: #777;
+        color: #777 !important;
         cursor: text;         /* [1] */
         box-shadow:none;
 	}
