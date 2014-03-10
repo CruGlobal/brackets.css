@@ -260,7 +260,9 @@ $query-unit: 16px;
     &:active,
     &.active {
       background-color: $background;
-          border-color: $border
+      border-color: $border;
+	  cursor: not-allowed;
+	  pointer-events: none; // Future-proof disabling of clicks
     }
   }
 }
