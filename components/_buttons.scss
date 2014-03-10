@@ -96,34 +96,36 @@
 	 */
 	%button,
 	.button{
-		&--small{
-			line-height: 2;
+		@at-root{
+			#[&]--small{
+				line-height: 2;
 			
-			@include rem-calc(height, 24px);
+				@include rem-calc(height, 24px);
 			
-			@include rem-calc(padding-left, 8px);
-			@include rem-calc(padding-right, 8px);
-		}
+				@include rem-calc(padding-left, 8px);
+				@include rem-calc(padding-right, 8px);
+			}
 		
-		&--large{
-			line-height: 4;
+			#[&]--large{
+				line-height: 4;
 			
-			@include rem-calc(height, 64px);
+				@include rem-calc(height, 64px);
 			
-			@include rem-calc(padding-left, 30px);
-			@include rem-calc(padding-right, 30px);
-		}
+				@include rem-calc(padding-left, 30px);
+				@include rem-calc(padding-right, 30px);
+			}
 		
-		/**
-		 * These buttons will fill the entirety of their container.
-		 *
-		 * 1. Remove padding so that widths and paddings don’t conflict.
-		 */
-		&--full{
-		    width: 100%;
-		    padding-right:0;            /* [1] */
-		    padding-left: 0;            /* [1] */
-		    text-align:center;
+			/**
+			 * These buttons will fill the entirety of their container.
+			 *
+			 * 1. Remove padding so that widths and paddings don’t conflict.
+			 */
+			#[&]--full{
+			    width: 100%;
+			    padding-right:0;            /* [1] */
+			    padding-left: 0;            /* [1] */
+			    text-align:center;
+			}
 		}
 	}
 	
@@ -135,18 +137,20 @@
 	 * Button font-size modifiers.
 	 */
 	%button,
-	.button{	
-		&--alpha{
-			@include rem-calc(font-size, 30px);		
-		}
+	.button{
+		@at-root{
+			#[&]--alpha{
+				@include rem-calc(font-size, 30px);		
+			}
 
-		&--beta{
-			@include rem-calc(font-size, 24px);	
-		}
+			#[&]--beta{
+				@include rem-calc(font-size, 24px);	
+			}
 
-		&--gamma{
-			@include rem-calc(font-size, 16px);		
-		}	
+			#[&]--gamma{
+				@include rem-calc(font-size, 16px);		
+			}
+		}		
 	}
 	
 	
@@ -172,59 +176,60 @@
 	
 	%button,
 	.button{
-		/**
-		 * Positive actions; e.g. sign in, purchase, submit, etc.
-		 */
-		&--positive{
-		    background-color:#4A993E;
-			border-color: darken(#4A993E, 10%);
+		@at-root{
+			/**
+			 * Positive actions; e.g. sign in, purchase, submit, etc.
+			 */
+			#[&]--positive{
+			    background-color:#4A993E;
+				border-color: darken(#4A993E, 10%);
 			
-			
-			&, 
-			&:hover,
-			&:focus,
-			&:active, 
-			&:visited {
-				color:#fff;
-			}
+				&, 
+				&:hover,
+				&:focus,
+				&:active, 
+				&:visited {
+					color:#fff;
+				}
 
-			&:hover{
-				background-color: darken(#4A993E, 10%);
+				&:hover{
+					background-color: darken(#4A993E, 10%);
+				}
 			}
-		}
 		
-		/**
-		 * Negative actions; e.g. close account, delete photo, remove friend, etc.
-		 */
-		&--negative{
-		    background-color: #b33630;
-			border-color: darken(#b33630, 10%);
+			/**
+			 * Negative actions; e.g. close account, delete photo, remove friend, etc.
+			 */
+			#[&]--negative{
+			    background-color: #b33630;
+				border-color: darken(#b33630, 10%);
 			
 			
-			&, 
-			&:hover,
-			&:focus,
-			&:active, 
-			&:visited {
-		    	color: #fff;
-			}
+				&, 
+				&:hover,
+				&:focus,
+				&:active, 
+				&:visited {
+			    	color: #fff;
+				}
 
-			&:hover{
-				background-color: darken(#b33630, 10%);
+				&:hover{
+					background-color: darken(#b33630, 10%);
+				}
 			}
-		}
 		
-		/**
-		 * Inactive, disabled buttons.
-		 */
-		&--inactive {
-			&, 
-			&:hover, 
-			&:active, 
-			&:focus{
-				@extend %btn--inactive;
-			}
-	    }
+			/**
+			 * Inactive, disabled buttons.
+			 */
+			#[&]--inactive {
+				&, 
+				&:hover, 
+				&:active, 
+				&:focus{
+					@extend %btn--inactive;
+				}
+		    }
+		}
 	}
 	
 	button[disabled],
