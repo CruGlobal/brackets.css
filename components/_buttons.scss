@@ -96,8 +96,7 @@
 	 */
 	%button,
 	.button{
-		@at-root{
-			#[&]--small{
+			&--small{
 				line-height: 2;
 			
 				@include rem-calc(height, 24px);
@@ -106,7 +105,7 @@
 				@include rem-calc(padding-right, 8px);
 			}
 		
-			#[&]--large{
+			&--large{
 				line-height: 4;
 			
 				@include rem-calc(height, 64px);
@@ -120,13 +119,12 @@
 			 *
 			 * 1. Remove padding so that widths and paddings don’t conflict.
 			 */
-			#[&]--full{
+			&--full{
 			    width: 100%;
 			    padding-right:0;            /* [1] */
 			    padding-left: 0;            /* [1] */
 			    text-align:center;
 			}
-		}
 	}
 	
 	
@@ -138,19 +136,17 @@
 	 */
 	%button,
 	.button{
-		@at-root{
-			#[&]--alpha{
+			&--alpha{
 				@include rem-calc(font-size, 30px);		
 			}
 
-			#[&]--beta{
+			&--beta{
 				@include rem-calc(font-size, 24px);	
 			}
 
-			#[&]--gamma{
+			&--gamma{
 				@include rem-calc(font-size, 16px);		
 			}
-		}		
 	}
 	
 	
@@ -176,11 +172,10 @@
 	
 	%button,
 	.button{
-		@at-root{
 			/**
 			 * Positive actions; e.g. sign in, purchase, submit, etc.
 			 */
-			#[&]--positive{
+			&--positive{
 			    background-color:#4A993E;
 				border-color: darken(#4A993E, 10%);
 			
@@ -200,7 +195,7 @@
 			/**
 			 * Negative actions; e.g. close account, delete photo, remove friend, etc.
 			 */
-			#[&]--negative{
+			&--negative{
 			    background-color: #b33630;
 				border-color: darken(#b33630, 10%);
 			
@@ -221,7 +216,7 @@
 			/**
 			 * Inactive, disabled buttons.
 			 */
-			#[&]--inactive {
+			&--inactive {
 				&, 
 				&:hover, 
 				&:active, 
@@ -229,7 +224,6 @@
 					@extend %btn--inactive;
 				}
 		    }
-		}
 	}
 	
 	button[disabled],
