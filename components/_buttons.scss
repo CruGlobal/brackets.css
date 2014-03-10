@@ -1,63 +1,245 @@
 @if $use-buttons == true{
-
-button, 
+/*------------------------------------*\
+    $Buttons
+\*------------------------------------*/	
+/**
+ * Base button styles
+ */
 %button, 
-.button, 
-input[type="button"], 
-input[type="submit"]{
+.button {
 	display: inline-block;
-	
-	max-width: 100%;
+	vertical-align: middle;
+	white-space: nowrap;
+	cursor: pointer;
+
+	margin: 0;
+    padding-top:   0;         
+    padding-bottom:0;           
 	
 	background-color: $btn-default-bg;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	
 	border: 2px solid;
 	border-color: $btn-default-border;
 	
 	color: $btn-default-color;
-	line-height: ceil($btn-font-size / $btn-default-min-height) * ($btn-default-min-height / $btn-font-size);	
+	font-weight: 500;
+	//line-height: ceil($btn-font-size / $btn-default-min-height) * ($btn-default-min-height / $btn-font-size);	
+	line-height: 3;
 	text-align: center;
 	vertical-align: middle;
-	
-	cursor: pointer;
-	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-	white-space: nowrap;
-	
+	overflow: visible;
+		
 	@include font-size($btn-font-size, false);
 	
 	@include rem-calc(min-height, $btn-default-min-height);
 	
-	@include rem-calc(padding, 0 26px);
-	@include rem-calc(margin, 0 8px 4px 0);
+	@include rem-calc(padding-left, 24px);
+	@include rem-calc(padding-right, 24px);
 	@include rem-calc(border-radius, $base-border-radius);
 	
 	@include vendor(appearance, none);
 	@include user-select(none);
-	
-	&:focus {
-		@include tab-focus;
-	}
-	
-	&:hover,
-	&:focus {
-		color: $btn-default-color;
-		background-color: darken($btn-default-bg, 10%);
-		text-decoration: none;
-	}
-	
-    &:active,
-    &.active {
-      outline: 0;
-      background-image: none;
-    }
-
-
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-      cursor: not-allowed;
-      pointer-events: none; // Future-proof disabling of clicks
-      @include opacity(.65);
-    }
 }
+	/**
+	 * Base button states
+	 */
+	%button,
+	.button {
+		
+		&, 
+		&:hover,
+		&:focus,
+		&:active, 
+		&:visited {
+			color: $btn-default-color;
+			text-decoration: none;
+		}
+
+		&:hover{
+			background-color: darken($btn-default-bg, 10%);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+		}
+
+		&:active,
+		&:focus{
+		    outline:none;
+		    box-shadow:0 0 2px rgba(0, 0, 0, 0.3) inset;
+		}
+
+		&:focus {
+			@include tab-focus;
+		}
+
+		&:active{
+			outline: 0;
+			background-image: none;
+		}
+		
+		&::-moz-focus-inner { 
+	        border: 0;
+	        padding: 0;
+		}
+		  
+		  
+	}
+	
+	
+	
+	
+	
+	/**
+	 * Button size modifiers
+	 *
+	 * These all follow the same sizing rules as above; text is 1em, space around it
+     * remains uniform.
+	 */
+	%button,
+	.button{
+		&--small{
+			line-height: 2;
+			
+			@include rem-calc(height, 24px);
+			
+			@include rem-calc(padding-left, 8px);
+			@include rem-calc(padding-right, 8px);
+		}
+		
+		&--large{
+			line-height: 4;
+			
+			@include rem-calc(height, 64px);
+			
+			@include rem-calc(padding-left, 30px);
+			@include rem-calc(padding-right, 30px);
+		}
+		
+		/**
+		 * These buttons will fill the entirety of their container.
+		 *
+		 * 1. Remove padding so that widths and paddings don’t conflict.
+		 */
+		&--full{
+		    width: 100%;
+		    padding-right:0;            /* [1] */
+		    padding-left: 0;            /* [1] */
+		    text-align:center;
+		}
+	}
+	
+	
+	
+	
+	
+	/**
+	 * Button font-size modifiers.
+	 */
+	%button,
+	.button{	
+		&--alpha{
+			@include rem-calc(font-size, 30px);		
+		}
+
+		&--beta{
+			@include rem-calc(font-size, 24px);	
+		}
+
+		&--gamma{
+			@include rem-calc(font-size, 16px);		
+		}	
+	}
+	
+	
+	
+	
+	
+	/**
+	 * Button Functions
+	 */
+	
+	/**
+	 * Use to extend the inactive/disabled states: sass cannot extend a
+	 * nested property so this is a temporary hack
+	 *
+	 * 1. Make the button look like normal text when hovered.
+	 */
+	%btn--inactive{
+        background-color:#ddd;
+        color: #777;
+        cursor: text;         /* [1] */
+        box-shadow:none;
+	}
+	
+	%button,
+	.button{
+		/**
+		 * Positive actions; e.g. sign in, purchase, submit, etc.
+		 */
+		&--positive{
+		    background-color:#4A993E;
+			border-color: darken(#4A993E, 10%);
+			
+			
+			&, 
+			&:hover,
+			&:focus,
+			&:active, 
+			&:visited {
+				color:#fff;
+			}
+
+			&:hover{
+				background-color: darken(#4A993E, 10%);
+			}
+		}
+		
+		/**
+		 * Negative actions; e.g. close account, delete photo, remove friend, etc.
+		 */
+		&--negative{
+		    background-color: #b33630;
+			border-color: darken(#b33630, 10%);
+			
+			
+			&, 
+			&:hover,
+			&:focus,
+			&:active, 
+			&:visited {
+		    	color: #fff;
+			}
+
+			&:hover{
+				background-color: darken(#b33630, 10%);
+			}
+		}
+		
+		/**
+		 * Inactive, disabled buttons.
+		 */
+		&--inactive {
+			&, 
+			&:hover, 
+			&:active, 
+			&:focus{
+				@extend %btn--inactive;
+			}
+	    }
+	}
+	
+	button[disabled],
+	input[disabled]{	
+		&, 
+		&:hover, 
+		&:active, 
+		&:focus {
+			@extend %btn--inactive;
+	        cursor: not-allowed;       
+			
+		}
+    }
+	
+
+
 
 } 
