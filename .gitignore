@@ -3,6 +3,8 @@
 .sass-cache/
 *.swp
 *.swo
+config-codekit.json
+config.codekit
 
 style.scss
 style.min.css
