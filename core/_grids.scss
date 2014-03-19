@@ -244,8 +244,8 @@ $use-silent-classes: false;
     /**
      * Thirds
      */
-    #{$class-type}#{$namespace}one-third         { width:33.333%; }
-    #{$class-type}#{$namespace}two-thirds        { width:66.666%; }
+    #{$class-type}#{$namespace}one-third         { width:32%; }
+    #{$class-type}#{$namespace}two-thirds        { width:64%; }
 
 
     /**

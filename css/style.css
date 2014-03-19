@@ -1518,10 +1518,10 @@ label,
  * Thirds
  */
 .one-third, .two-sixths, .four-twelfths {
-  width: 33.333%; }
+  width: 32%; }
 
 .two-thirds, .four-sixths, .eight-twelfths {
-  width: 66.666%; }
+  width: 64%; }
 
 /**
  * Quarters
@@ -1621,10 +1621,10 @@ label,
    * Thirds
    */
   .palm--one-third, .palm--two-sixths, .palm--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
@@ -1720,10 +1720,10 @@ label,
    * Thirds
    */
   .lap--one-third, .lap--two-sixths, .lap--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
@@ -1819,10 +1819,10 @@ label,
    * Thirds
    */
   .portable--one-third, .portable--two-sixths, .portable--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
@@ -1918,10 +1918,10 @@ label,
    * Thirds
    */
   .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
