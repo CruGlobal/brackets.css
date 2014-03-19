@@ -1512,7 +1512,7 @@ label,
  * Halves
  */
 .one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
-  width: 50%; }
+  width: 49%; }
 
 /**
  * Thirds
@@ -1615,7 +1615,7 @@ label,
    * Halves
    */
   .palm--one-half, .palm--two-quarters, .palm--three-sixths, .palm--four-eighths, .palm--five-tenths, .palm--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
@@ -1714,7 +1714,7 @@ label,
    * Halves
    */
   .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
@@ -1813,7 +1813,7 @@ label,
    * Halves
    */
   .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
@@ -1912,7 +1912,7 @@ label,
    * Halves
    */
   .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
