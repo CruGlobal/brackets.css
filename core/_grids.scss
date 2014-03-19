@@ -66,30 +66,14 @@ $use-silent-classes: false;
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.wrapper, %wrapper{
-	@extend %center;
-
-	@include rem(padding-left,  $magic-number);
-	@include rem(padding-right, $magic-number);
-	
-	@if $use-max-width == true {
-		@include rem(max-width, $max-grid-width);
-		
-	}
-	
-}
-
 
 #{$class-type}grid{
 	@extend %cf;
 	
-	
     list-style: none;                           /* [1] */
     margin: 0;                                  /* [2] */
     padding: 0;                                 /* [2] */
-	
-	@include rem(margin-left, -$magic-number);  /* [3] */
-	
+		
     @if $use-markup-fix != true{
         letter-spacing:-0.31em;
     }
@@ -127,7 +111,6 @@ $use-silent-classes: false;
             width:100%;                             /* [3] */
         }
 		
-        @include rem(padding-left,  $magic-number); /* [4] */
 		@include box-sizing(border-box);            /* [5] */
 				
         @if $use-markup-fix != true{
@@ -378,14 +361,14 @@ $use-silent-classes: false;
     /**
      * Halves
      */
-    #{$class-type}push--#{$namespace}one-half            { left:50%; @include silent-relative(); }
+    #{$class-type}push--#{$namespace}one-half            { left:49%; @include silent-relative(); }
 
 
     /**
      * Thirds
      */
-    #{$class-type}push--#{$namespace}one-third           { left:33.333%; @include silent-relative(); }
-    #{$class-type}push--#{$namespace}two-thirds          { left:66.666%; @include silent-relative(); }
+    #{$class-type}push--#{$namespace}one-third           { left:32%; @include silent-relative(); }
+    #{$class-type}push--#{$namespace}two-thirds          { left:64%; @include silent-relative(); }
 
 
     /**

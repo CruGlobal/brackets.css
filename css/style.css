@@ -1400,22 +1400,13 @@ label,
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.wrapper {
-  padding-left: 29px;
-  padding-left: 1.61111rem;
-  padding-right: 29px;
-  padding-right: 1.61111rem; }
-
 .grid {
   list-style: none;
   /* [1] */
   margin: 0;
   /* [2] */
   padding: 0;
-  /* [2] */
-  margin-left: -29px;
-  margin-left: -1.61111rem;
-  /* [3] */ }
+  /* [2] */ }
 
 /**
  * 1. Cause columns to stack side-by-side.
@@ -1432,9 +1423,6 @@ label,
   /* [2] */
   width: 100%;
   /* [3] */
-  padding-left: 29px;
-  padding-left: 1.61111rem;
-  /* [4] */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -2768,7 +2756,7 @@ input[disabled]:focus,
 /**
  * Content Alignment
  */
-.wrapper, .center-block, .centered {
+.center-block, .centered {
   margin-left: auto;
   margin-right: auto; }
 
