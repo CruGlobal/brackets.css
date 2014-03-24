@@ -123,7 +123,7 @@
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-.informative{
+.informative, %informative{
     cursor:help!important;
 }
 
@@ -131,7 +131,7 @@
 /**
  * Mute an object by reducing its opacity.
  */
-.muted{
+.muted, %muted{
     opacity:0.5!important;
     filter:alpha(opacity = 50)!important;
 }
@@ -143,7 +143,7 @@
    <a href=# class=go>Read more</a>
  *
  */
-.go:after{
+.go:after, .go:after{
     content:"\00A0" "\00BB"!important;
 }
 
@@ -151,7 +151,7 @@
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-.caps{
+.caps, %caps{
     text-transform:uppercase!important;
 }
 

@@ -1474,15 +1474,6 @@ input + .additional {
     text-align: left; }
 
 /**
- * Gutterless grids have all the properties of regular grids, minus any spacing.
- * Extends `.grid`.
- */
-.grid--full {
-  margin-left: 0; }
-  .grid--full > .grid__item {
-    padding-left: 0; }
-
-/**
  * Align the entire grid to the right. Extends `.grid`.
  */
 .grid--right {
@@ -1498,32 +1489,6 @@ input + .additional {
   text-align: center; }
   .grid--center > .grid__item {
     text-align: left; }
-
-/**
- * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
- * `.grid`.
- */
-.grid--middle > .grid__item {
-  vertical-align: middle; }
-
-.grid--bottom > .grid__item {
-  vertical-align: bottom; }
-
-/**
- * Create grids with narrower gutters. Extends `.grid`.
- */
-.grid--narrow {
-  margin-left: -14.5px; }
-  .grid--narrow > .grid__item {
-    padding-left: 14.5px; }
-
-/**
- * Create grids with wider gutters. Extends `.grid`.
- */
-.grid--wide {
-  margin-left: -58px; }
-  .grid--wide > .grid__item {
-    padding-left: 58px; }
 
 /*------------------------------------*\
     $WIDTHS
@@ -2784,7 +2749,7 @@ input[disabled]:focus,
    <a href=# class=go>Read more</a>
  *
  */
-.go:after {
+.go:after, .go:after {
   content: "\00A0" "\00BB" !important; }
 
 /**

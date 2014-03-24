@@ -137,19 +137,6 @@ $use-silent-classes: false;
 
 
 /**
- * Gutterless grids have all the properties of regular grids, minus any spacing.
- * Extends `.grid`.
- */
-#{$class-type}grid--full{
-    margin-left:0;
-
-    > #{$class-type}grid__item{
-        padding-left:0;
-    }
-}
-
-
-/**
  * Align the entire grid to the right. Extends `.grid`.
  */
 #{$class-type}grid--right{
@@ -170,49 +157,6 @@ $use-silent-classes: false;
 
     > #{$class-type}grid__item{
         text-align:left;
-    }
-}
-
-
-/**
- * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
- * `.grid`.
- */
-#{$class-type}grid--middle{
-
-    > #{$class-type}grid__item{
-        vertical-align:middle;
-    }
-}
-
-#{$class-type}grid--bottom{
-
-    > #{$class-type}grid__item{
-        vertical-align:bottom;
-    }
-}
-
-
-/**
- * Create grids with narrower gutters. Extends `.grid`.
- */
-#{$class-type}grid--narrow{
-    margin-left:-($gutter / 2);
-
-    > #{$class-type}grid__item{
-        padding-left:$gutter / 2;
-    }
-}
-
-
-/**
- * Create grids with wider gutters. Extends `.grid`.
- */
-#{$class-type}grid--wide{
-    margin-left:-($gutter * 2);
-
-    > #{$class-type}grid__item{
-        padding-left:$gutter * 2;
     }
 }
 
