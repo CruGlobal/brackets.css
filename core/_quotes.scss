@@ -76,16 +76,16 @@ blockquote{
 /**
  * Inline quotes.
  */
-q {
-    quotes: "‘" "’" "“" "”";
+q{
+    quotes:"“" "”";
 
     &:before {
-        content: "‘";
+        content: "“";
         content: open-quote;
     }
 
     &:after {
-        content: "’";
+        content: "“";
         content: close-quote;
     }
 
@@ -95,16 +95,20 @@ q {
     }
 
     q:after{
-        content: "”";
+        content: "“";
         content: close-quote;
     }
 
     /**
      * If an element opens with an inline quote, let’s hang that.
      */
-    &:first-child {
+    &.opener {
         display: inline-block;
         text-indent: -0.22em;
     }
 
+    &:first-child {
+        display: inline-block;
+        text-indent: 0;
+    }
 }

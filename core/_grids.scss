@@ -66,30 +66,14 @@ $use-silent-classes: false;
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.wrapper, %wrapper{
-	@extend %center;
-
-	@include rem(padding-left,  $magic-number);
-	@include rem(padding-right, $magic-number);
-	
-	@if $use-max-width == true {
-		@include rem(max-width, $max-grid-width);
-		
-	}
-	
-}
-
 
 #{$class-type}grid{
 	@extend %cf;
 	
-	
     list-style: none;                           /* [1] */
     margin: 0;                                  /* [2] */
     padding: 0;                                 /* [2] */
-	
-	@include rem(margin-left, -$magic-number);  /* [3] */
-	
+		
     @if $use-markup-fix != true{
         letter-spacing:-0.31em;
     }
@@ -127,7 +111,6 @@ $use-silent-classes: false;
             width:100%;                             /* [3] */
         }
 		
-        @include rem(padding-left,  $magic-number); /* [4] */
 		@include box-sizing(border-box);            /* [5] */
 				
         @if $use-markup-fix != true{
@@ -149,19 +132,6 @@ $use-silent-classes: false;
     > #{$class-type}grid__item{
         direction:ltr;
         text-align:left;
-    }
-}
-
-
-/**
- * Gutterless grids have all the properties of regular grids, minus any spacing.
- * Extends `.grid`.
- */
-#{$class-type}grid--full{
-    margin-left:0;
-
-    > #{$class-type}grid__item{
-        padding-left:0;
     }
 }
 
@@ -191,49 +161,6 @@ $use-silent-classes: false;
 }
 
 
-/**
- * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
- * `.grid`.
- */
-#{$class-type}grid--middle{
-
-    > #{$class-type}grid__item{
-        vertical-align:middle;
-    }
-}
-
-#{$class-type}grid--bottom{
-
-    > #{$class-type}grid__item{
-        vertical-align:bottom;
-    }
-}
-
-
-/**
- * Create grids with narrower gutters. Extends `.grid`.
- */
-#{$class-type}grid--narrow{
-    margin-left:-($gutter / 2);
-
-    > #{$class-type}grid__item{
-        padding-left:$gutter / 2;
-    }
-}
-
-
-/**
- * Create grids with wider gutters. Extends `.grid`.
- */
-#{$class-type}grid--wide{
-    margin-left:-($gutter * 2);
-
-    > #{$class-type}grid__item{
-        padding-left:$gutter * 2;
-    }
-}
-
-
 
 
 
@@ -255,14 +182,14 @@ $use-silent-classes: false;
     /**
      * Halves
      */
-    #{$class-type}#{$namespace}one-half          { width:50%; }
+    #{$class-type}#{$namespace}one-half          { width:49%; }
 
 
     /**
      * Thirds
      */
-    #{$class-type}#{$namespace}one-third         { width:33.333%; }
-    #{$class-type}#{$namespace}two-thirds        { width:66.666%; }
+    #{$class-type}#{$namespace}one-third         { width:32%; }
+    #{$class-type}#{$namespace}two-thirds        { width:64%; }
 
 
     /**
@@ -378,14 +305,14 @@ $use-silent-classes: false;
     /**
      * Halves
      */
-    #{$class-type}push--#{$namespace}one-half            { left:50%; @include silent-relative(); }
+    #{$class-type}push--#{$namespace}one-half            { left:49%; @include silent-relative(); }
 
 
     /**
      * Thirds
      */
-    #{$class-type}push--#{$namespace}one-third           { left:33.333%; @include silent-relative(); }
-    #{$class-type}push--#{$namespace}two-thirds          { left:66.666%; @include silent-relative(); }
+    #{$class-type}push--#{$namespace}one-third           { left:32%; @include silent-relative(); }
+    #{$class-type}push--#{$namespace}two-thirds          { left:64%; @include silent-relative(); }
 
 
     /**

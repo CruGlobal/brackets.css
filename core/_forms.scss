@@ -14,11 +14,11 @@ fieldset{
 }
 
 	.form__inputs:first-of-type{
-		margin-bottom: 0;
+		@extend %flush--bottom;
 	}
 	
 	.form__actions{
-		margin-bottom: 0;
+		@extend %flush--bottom;
 	}
 
 
@@ -141,6 +141,7 @@ legend{
 label,
 .label{
     display:block;
+	@include rem-calc(margin-bottom, 6px);
 }
     /**
      * Extra help text in `label`s, e.g.:
@@ -150,9 +151,17 @@ label,
      */
     .additional{
         display:block;
-        font-weight:normal;
+        font-weight: normal;
+		font-style: italic;
     }
+	
+	input + .additional{
+		@include rem-calc(margin-top, 6px);
+	}
 
+	.additional, .check-list > li{
+		@include rem-calc(margin-bottom, 12px);
+	}
 
 
 /*
@@ -230,3 +239,5 @@ label,
 	
 	@include rem(margin-top, 6px);
 }
+
+
