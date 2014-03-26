@@ -160,6 +160,17 @@ $use-silent-classes: false;
     }
 }
 
+/**
+ * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
+ * `.grid`.
+ */
+#{$class-type}grid--middle{
+
+    > #{$class-type}grid__item{
+        vertical-align:middle;
+    }
+}
+
 
 
 

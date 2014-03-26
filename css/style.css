@@ -1490,6 +1490,13 @@ input + .additional {
   .grid--center > .grid__item {
     text-align: left; }
 
+/**
+ * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
+ * `.grid`.
+ */
+.grid--middle > .grid__item {
+  vertical-align: middle; }
+
 /*------------------------------------*\
     $WIDTHS
 \*------------------------------------*/
