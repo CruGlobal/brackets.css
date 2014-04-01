@@ -19,10 +19,9 @@
  *
  */
 .nav{
-    list-style: none;
-    margin-left: 0;
-    @extend .cf;
-
+	@extend %bare-list;
+	@extend .cf;
+	
     > li{
 
         &,

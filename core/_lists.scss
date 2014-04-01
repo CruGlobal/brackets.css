@@ -19,6 +19,14 @@ li{
     list-style-type: decimal;
 }
 
+/**
+ * Removes the indentation and the bullets from a list
+ */
+.bare-list, %bare-list{
+	margin:  0;
+	padding: 0;
+	list-style: none;
+}
 
 .block-list{
 	list-style: none;
