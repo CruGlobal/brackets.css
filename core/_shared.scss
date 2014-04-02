@@ -12,8 +12,8 @@
 
 %vertical-rhythm {
     @extend %reset;
-    margin-bottom: $magic-number;
-    margin-bottom: $magic-ratio + rem;
+    margin-bottom: $base-spacing-unit;
+    margin-bottom: $base-spacing-unit + rem;
 }
 
 
@@ -47,23 +47,13 @@ pre, hr,
 /**
  * Objects and abstractions
  */
-%sass-margin-bottom,
+%margin-bottom,
 .media,
 .island,
 .islet{
 	@extend %vertical-rhythm; 
-
-    .islet &{
-		@include half-spacing(margin-bottom);
-	}
-}
-
-/**
- * Doubled up `margin-bottom` helper class.
- */
-.landmark{
-	@extend %vertical-rhythm; 
-	@include double-spacing(margin-bottom);   
+    margin-bottom: $base-spacing-unit;
+    margin-bottom: $base-spacing-unit + rem;
 }
 
 
@@ -81,7 +71,8 @@ hr{
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
-ul,ol,dd{
-	@extend %vertical-rhythm; 
-	@include double-spacing(margin-left);
+ul,ol,dd,
+%margin-left {
+    margin-left: 2 * $base-spacing-unit;
+    margin-left: (2 * $base-spacing-ratio / $base-spacing-ratio) * 1rem;
 }
