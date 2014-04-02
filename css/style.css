@@ -1023,28 +1023,28 @@ h2, .h2 {
   line-height: 1.3604;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000318}}
 h3, .h3 {
   font-size: 31.984px;
   font-size: 1.77689rem;
   line-height: 1.81341;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000323}}
 h4, .h4 {
   font-size: 23.994px;
   font-size: 1.333rem;
   line-height: 1.20864;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000328}}
 h5, .h5 {
   font-size: 18px;
   font-size: 1rem;
   line-height: 1.61111;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000333}}
 h6, .h6 {
   font-size: 14.4px;
   font-size: 0.8rem;
@@ -3677,24 +3677,29 @@ input[disabled]:focus,
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000335}}
-.weight--normal {
+.weight--semi-light, h2, .h2, h3, .h3 {
   font-weight: 300 !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000336}}
-.weight--semibold {
+.weight--normal, h4, .h4, h5, .h5 {
+  font-weight: 400 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000337}}
+.weight--semibold, h6, .h6 {
   font-weight: 600 !important;
 }
 
 /**
  * Pull items full width of `.island` parents.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000344}}
 .full-bleed {
   margin-right: -29px !important;
   margin-left: -29px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000348}}
 .islet .full-bleed {
   margin-right: -14.5px !important;
   margin-left: -14.5px !important;
@@ -3704,7 +3709,7 @@ input[disabled]:focus,
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000359}}
 .informative {
   cursor: help !important;
 }
@@ -3712,7 +3717,7 @@ input[disabled]:focus,
 /**
  * Mute an object by reducing its opacity.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000367}}
 .muted {
   opacity: 0.5 !important;
   filter: alpha(opacity=50) !important;
@@ -3724,7 +3729,7 @@ input[disabled]:focus,
    <a href=# class=go>Read more</a>
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000379}}
 .go:after, .go:after {
   content: "\00A0" "\00BB" !important;
 }
@@ -3732,7 +3737,7 @@ input[disabled]:focus,
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000387}}
 .caps {
   text-transform: uppercase !important;
 }
@@ -3741,7 +3746,7 @@ input[disabled]:focus,
  * Hide content off-screen without resorting to `display:none;`, also provide
  * breakpoint specific hidden elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003106}}
 .accessibility,
 .visuallyhidden {
   border: 0 !important;
@@ -3757,13 +3762,13 @@ input[disabled]:focus,
 /**
  * Content Alignment
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003125}}
 .center-block, .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003130}}
 .center-block {
   width: 100%;
   text-align: center;

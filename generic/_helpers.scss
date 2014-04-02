@@ -31,9 +31,10 @@
 /**
  * Font weights
  */
-.weight--light,    %weight--light     { font-weight:100!important; }
-.weight--normal,   %weight--normal    { font-weight:300!important; }
-.weight--semibold, %weight--semibold  { font-weight:600!important; }
+.weight--light,      %weight--light       { font-weight:100!important; }
+.weight--semi-light, %weight--semilight  { font-weight:300!important; }
+.weight--normal,     %weight--normal      { font-weight:400!important; }
+.weight--semibold,   %weight--semibold    { font-weight:600!important; }
 
 
 
