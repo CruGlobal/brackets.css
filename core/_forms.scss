@@ -14,11 +14,11 @@ fieldset{
 }
 
 	.form__inputs:first-of-type{
-		@extend %mb0;
+		margin-bottom: 0;
 	}
 	
 	.form__actions{
-		@extend %mb0;
+		margin-bottom: 0;
 	}
 
 

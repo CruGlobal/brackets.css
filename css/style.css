@@ -1364,6 +1364,16 @@ fieldset + fieldset {
   margin-bottom: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000316}}
+.form__inputs:first-of-type {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000320}}
+.form__actions {
+  margin-bottom: 0;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000325}}
 legend {
   display: block;
@@ -3349,7 +3359,7 @@ input[disabled]:focus,
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003119}}
-.mb0, .form__inputs:first-of-type, .form__actions {
+.mb0 {
   margin-bottom: 0 !important;
 }
 
