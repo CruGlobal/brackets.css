@@ -36,6 +36,34 @@
 .weight--normal,     %weight--normal      { font-weight:400!important; }
 .weight--semibold,   %weight--semibold    { font-weight:600!important; }
 
+/**
+ * View helpers
+ */
+.overflow--hide, %overflow--hide{ overflow: hidden; }
+.overflow--show, %overflow--show{ overflow: visible; }
+
+
+/**
+ * Positioning
+ */
+.position--absolute, %position--absolute{ position: absolute; }
+.position--relative, %position--relative{ position: relative; }
+.position--fixed,    %position--fixed{ position: fixed; }
+
+
+/**
+ * Content Alignment
+ */
+%center, .centered{ margin-left: auto; margin-right: auto;}
+
+%center-block, .center-block{
+	@extend %center;
+	
+	width: 100%;
+	text-align: center;
+}
+
+
 
 
 /**
