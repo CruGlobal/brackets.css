@@ -5,6 +5,7 @@
 *.swo
 config-codekit.json
 config.codekit
+codekit-config.json
 
 style.scss
 style.min.css
