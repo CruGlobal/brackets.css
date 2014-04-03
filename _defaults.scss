@@ -50,7 +50,8 @@ $base-font-family:             sans-serif !default;
 /**
  * Default colours for objects’ borders etc.
  */
-$base-font-color:              #444444 !default;
+$base-background-color:        #ffffff !default;
+$base-text-color:              #444444 !default;
 $base-ui-color:                #CCCCCC !default;
 $base-accent-color:            #007CB1 !default;
 
@@ -58,11 +59,6 @@ $base-accent-color:            #007CB1 !default;
  * Default value for edges and such
  */
 $base-border-radius:           2px !default;
-
-/**
- * Would you like indented (rather than spaced) paragraph delimiting?
- */
-$indented-paragraphs:          false !default;
 
 
 
@@ -232,7 +228,7 @@ $link-font-color-hover:        darken($base-accent-color, 5%) !default;
  */
 $btn-font-size:                16px;
 $btn-default-min-height:       40px;
-$btn-default-color:            $base-font-color !default;
+$btn-default-color:            $base-text-color !default;
 $btn-default-bg:               $base-ui-color !default;
 $btn-default-border:           darken($base-ui-color, 5%) !default;
 
@@ -250,4 +246,16 @@ $use-nav:                      false !default;
 $use-options:				   false !default;
 $use-pagination:			   false !default;
 $use-breadcrumb:               false !default;
+$use-media:                    false !default;
 
+
+
+
+
+/**
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
+ */
+$base-spacing-unit:            $base-line-height !default;
+$base-spacing-ratio:		   $base-line-height / $base-font-size;

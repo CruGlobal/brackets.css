@@ -142,7 +142,7 @@
 //@import "jumbotron";
 //@import "thumbnails";
 //@import "progress-bars";
-//@import "media";
+@import "components/media";
 //@import "list-group";
 //@import "panels";
 //@import "wells";
@@ -150,4 +150,5 @@
 /**
  * Style trumps; helper and brand classes
  */
+@import "generic/spacing";
 @import "generic/helpers"; 

@@ -61,7 +61,6 @@ textarea {
   line-height: inherit;
 }
 
-
 // Links
 
 a {
@@ -72,10 +71,6 @@ a {
   &:focus {
     color: darken($base-accent-color, 5%);
     text-decoration: underline;
-  }
-
-  &:focus {
-    //@include tab-focus;
   }
 }
 

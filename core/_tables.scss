@@ -13,7 +13,7 @@
  * Baseline styles
  */
 table {
-		@extend %vertical-rhythm;
+	@extend %vertical-rhythm;
 	max-width: 100%;
 	width: 100%; /* [1] */
 	
@@ -61,7 +61,7 @@ th {
 	%table__item{
 		@extend %table__item;
 		
-	    line-height: $magic-ratio;
+	    line-height: $base-spacing-ratio;
 		
 		@include half-spacing(padding);
 	.table__item, 
