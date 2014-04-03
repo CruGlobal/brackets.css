@@ -304,23 +304,19 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\0000323}}
 html {
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove default margin.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\0000336}}
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -329,7 +325,6 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\0000349}}
 article,
 aside,
 details,
@@ -342,14 +337,12 @@ main,
 nav,
 section,
 summary {
-  display: block;
-}
+  display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\0000369}}
 audio,
 canvas,
 progress,
@@ -357,122 +350,95 @@ video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\0000386}}
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\0000396}}
 [hidden],
 template {
-  display: none;
-}
+  display: none; }
 
 /* Links
    ========================================================================== */
 /**
  * Remove the gray background color from active links in IE 10.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003108}}
 a {
-  background: transparent;
-}
+  background: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003117}}
 a:active, a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 /* Text-level semantics
    ========================================================================== */
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003129}}
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003137}}
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003152}}
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003161}}
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 /**
  * Addresses styling not present in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003197}}
 mark {
   background: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003236}}
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003244}}
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003252}}
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003256}}
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 /* Embedded content
    ========================================================================== */
@@ -480,59 +446,47 @@ sub {
  * 1. Remove border when inside `a` element in IE 8/9/10.
  * 2. Improves image quality when scaled in IE 7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003311}}
 img {
-  border: 0;
-}
+  border: 0; }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003322}}
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Grouping content
    ========================================================================== */
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003333}}
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003341}}
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Contain overflow in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003351}}
 pre {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003360}}
 code,
 kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 /* Forms
    ========================================================================== */
@@ -547,7 +501,6 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  * 4. Improves appearance and consistency in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003387}}
 button,
 input,
 optgroup,
@@ -558,16 +511,13 @@ textarea {
   font: inherit;
   /* 2 */
   margin: 0;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003405}}
 button {
-  overflow: visible;
-}
+  overflow: visible; }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -575,11 +525,9 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003416}}
 button,
 select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -590,7 +538,6 @@ select {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003431}}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -598,97 +545,80 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003446}}
 button[disabled],
 html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003455}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003466}}
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  *    Known issue: excess padding remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003476}}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003492}}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003503}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003516}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * Define consistent border, margin, and padding.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003525}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -696,47 +626,37 @@ fieldset {
  * 3. Corrects text not wrapping in Firefox 3.
  * 4. Corrects alignment displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003538}}
 legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003551}}
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003560}}
 optgroup {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /* Tables
    ========================================================================== */
 /**
  * Remove most spacing between table cells.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003571}}
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/bower_components\/normalize-scss\/_normalize\.scss}line{font-family:\00003576}}
 td,
 th {
-  padding: 0;
-}
+  padding: 0; }
 
 /*------------------------------------*\
     $RESTART
@@ -744,111 +664,83 @@ th {
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\000038}}
 abbr[title], dfn[title] {
-  cursor: help;
-}
+  cursor: help; }
 
 /**
  * Remove underlines from potentially troublesome elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000315}}
 u, ins {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /**
  * Apply faux underline via `border-bottom`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000322}}
 ins {
-  border-bottom: 1px solid;
-}
+  border-bottom: 1px solid; }
 
 /**
  * So that `alt` text is visually offset if images don’t load.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000329}}
 img {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Give form elements some cursor interactions...
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000337}}
 label,
 input,
 textarea,
 button,
 select,
 option {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000345}}
 .text-input:active,
 .text-input:focus,
 textarea:active,
 textarea:focus {
   cursor: text;
-  outline: none;
-}
+  outline: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000355}}
 input,
 button,
 select,
 textarea {
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
-}
+  line-height: inherit; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000366}}
 a {
   color: #007cb1;
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000370}}
-a:hover, a:focus {
-  color: #006a98;
-  text-decoration: underline;
-}
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #006a98;
+    text-decoration: underline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000380}}
 img {
   vertical-align: middle;
   max-width: 100%;
-  /* Set images to the full width of parent */
-}
+  /* Set images to the full width of parent */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000387}}
 hr {
   border: 0;
-  border-top: 1px solid #cccccc;
-}
+  border-top: 1px solid #cccccc; }
 
 /* Helpful Typography Defaults */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\0000394}}
 em,
 i {
   font-style: italic;
-  line-height: inherit;
-}
+  line-height: inherit; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\00003100}}
 strong,
 b {
   font-weight: bold;
-  line-height: inherit;
-}
+  line-height: inherit; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_restart\.scss}line{font-family:\00003106}}
 small {
   font-size: 80%;
-  line-height: inherit;
-}
+  line-height: inherit; }
 
 /*------------------------------------*\
     $CLEARFIX
@@ -864,17 +756,13 @@ small {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_clearfix\.scss}line{font-family:\0000316}}
 .cf:before, .cf:after, .grid:before, .grid:after {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_clearfix\.scss}line{font-family:\0000321}}
+  /* 2 */ }
 .cf:after, .grid:after {
-  clear: both;
-}
+  clear: both; }
 
 /*------------------------------------*\
     $SHARED
@@ -883,7 +771,6 @@ small {
  * A lot of elements need to share some declarations (mainly for
  * vertical rhythm), so we `@extend` some silent classes.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_shared\.scss}line{font-family:\000038}}
 h1, h2, h3, h4, h5, h6,
 hgroup, p,
 ul, ol, dl,
@@ -895,10 +782,8 @@ pre, hr,
 .island,
 .islet {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_shared\.scss}line{font-family:\0000313}}
 h1, h2, h3, h4, h5, h6,
 hgroup, p,
 ul, ol, dl,
@@ -910,8 +795,7 @@ pre, hr,
 .island,
 .islet {
   margin-bottom: 29px;
-  margin-bottom: 29pxrem;
-}
+  margin-bottom: 29pxrem; }
 
 /**
  * Where `margin-bottom` is concerned, this value will be the same as the
@@ -930,7 +814,6 @@ pre, hr,
 /**
  * Base elements
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_shared\.scss}line{font-family:\0000341}}
 h1, h2, h3, h4, h5, h6,
 hgroup, p,
 ul, ol, dl,
@@ -942,28 +825,23 @@ pre, hr,
 .island,
 .islet {
   margin-bottom: 29px;
-  margin-bottom: 29pxrem;
-}
+  margin-bottom: 29pxrem; }
 
 /**
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_shared\.scss}line{font-family:\0000364}}
 hr {
   margin-top: 29px;
-  margin-top: 1.61111rem;
-}
+  margin-top: 1.61111rem; }
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_shared\.scss}line{font-family:\0000374}}
 ul, ol, dd {
   margin-left: 58px;
-  margin-left: 2rem;
-}
+  margin-left: 2rem; }
 
 /**
  * Base styles; unclassed HTML elements etc.
@@ -981,7 +859,6 @@ ul, ol, dd {
  *    desired `line-height` (defined previously in pixels), asnd your project’s
  *    base font size.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_base\.scss}line{font-family:\0000338}}
 html {
   font-size: 1.125em;
   /* [1] */
@@ -993,14 +870,11 @@ html {
   min-height: 100%;
     /**
 	 * If you have chosen to display a baseline grid, we turn it on here.
-	 */
-}
+	 */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_base\.scss}line{font-family:\0000358}}
 body {
   font-family: "freight-sans-pro", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
 /*------------------------------------*\
     $HEADINGS
@@ -1009,56 +883,42 @@ body {
  * Headings 1-6
  * 
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\000038}}
 h1, .h1 {
   font-size: 56.83202px;
   font-size: 3.15733rem;
-  line-height: 1.02055;
-}
+  line-height: 1.02055; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000313}}
 h2, .h2 {
   font-size: 42.63467px;
   font-size: 2.36859rem;
-  line-height: 1.3604;
-}
+  line-height: 1.3604; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000318}}
 h3, .h3 {
   font-size: 31.984px;
   font-size: 1.77689rem;
-  line-height: 1.81341;
-}
+  line-height: 1.81341; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000323}}
 h4, .h4 {
   font-size: 23.994px;
   font-size: 1.333rem;
-  line-height: 1.20864;
-}
+  line-height: 1.20864; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000328}}
 h5, .h5 {
   font-size: 18px;
   font-size: 1rem;
-  line-height: 1.61111;
-}
+  line-height: 1.61111; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_headings\.scss}line{font-family:\0000333}}
 h6, .h6 {
   font-size: 14.4px;
   font-size: 0.8rem;
-  line-height: 2.01389;
-}
+  line-height: 2.01389; }
 
 /*------------------------------------*\
     $PARAGRAPHS
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_paragraphs\.scss}line{font-family:\000035}}
 .lead {
   font-size: 20.25px;
-  font-size: 1.125rem;
-}
+  font-size: 1.125rem; }
 
 /**
  * Not strictly a paragraph, but probably doesn’t need its own section.
@@ -1073,11 +933,9 @@ h6, .h6 {
  * 1. Hang the opening quote of the blockquote.
  * .4em is roughly equal to the width of the opening “ that we wish to hang.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000313}}
 blockquote {
   text-indent: -0.41em;
-  /* [1] */
-}
+  /* [1] */ }
 
 /**
  * Set up quote marks on quoting elements. This is very English-based, so we are
@@ -1090,7 +948,6 @@ blockquote {
    </blockquote>
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000329}}
 blockquote {
   quotes: "“" "”";
   font-style: italic;
@@ -1098,112 +955,77 @@ blockquote {
   padding-left: 0.80556rem;
   font-size: 22px;
   font-size: 1.22222rem;
-  line-height: 1.31818;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000339}}
-blockquote p:before {
-  content: "“";
-  content: open-quote;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000344}}
-blockquote p:after {
-  content: "";
-  content: no-close-quote;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000349}}
-blockquote p:last-of-type {
-  margin-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000353}}
-blockquote p:last-of-type:after {
-  content: "”";
-  content: close-quote;
-}
+  line-height: 1.31818; }
+  blockquote p:before {
+    content: "“";
+    content: open-quote; }
+  blockquote p:after {
+    content: "";
+    content: no-close-quote; }
+  blockquote p:last-of-type {
+    margin-bottom: 0; }
+    blockquote p:last-of-type:after {
+      content: "”";
+      content: close-quote; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000363}}
 .source {
   display: block;
-  text-indent: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000367}}
-.source:before {
-  content: "\2014";
-}
+  text-indent: 0; }
+  .source:before {
+    content: "\2014"; }
 
 /**
  * Inline quotes.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000379}}
 q {
   quotes: "“" "”";
   /**
    * If an element opens with an inline quote, let’s hang that.
-   */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000382}}
-q:before {
-  content: "“";
-  content: open-quote;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000387}}
-q:after {
-  content: "“";
-  content: close-quote;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000392}}
-q q:before {
-  content: "“";
-  content: open-quote;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\0000397}}
-q q:after {
-  content: "“";
-  content: close-quote;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\00003105}}
-q.opener {
-  display: inline-block;
-  text-indent: -0.22em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_quotes\.scss}line{font-family:\00003110}}
-q:first-child {
-  display: inline-block;
-  text-indent: 0;
-}
+   */ }
+  q:before {
+    content: "“";
+    content: open-quote; }
+  q:after {
+    content: "“";
+    content: close-quote; }
+  q q:before {
+    content: "“";
+    content: open-quote; }
+  q q:after {
+    content: "“";
+    content: close-quote; }
+  q.opener {
+    display: inline-block;
+    text-indent: -0.22em; }
+  q:first-child {
+    display: inline-block;
+    text-indent: 0; }
 
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_images\.scss}line{font-family:\000034}}
 img[width],
 img[height] {
-  max-width: none;
-}
+  max-width: none; }
 
 /**
  * Rounded images.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_images\.scss}line{font-family:\0000312}}
 .image--rounded {
-  border-radius: 2px;
-}
+  border-radius: 2px; }
 
 /**
  * Circle images.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_images\.scss}line{font-family:\0000319}}
 .image--circle {
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 /**
  * Tumbnail images.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_images\.scss}line{font-family:\0000326}}
 .image--thumbnail {
   padding: 4px;
-  border: 1px solid #cccccc;
-}
+  border: 1px solid #cccccc; }
 
 /*------------------------------------*\
     $LISTS
@@ -1211,41 +1033,31 @@ img[height] {
 /**
  * Remove vertical spacing from nested lists.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_lists\.scss}line{font-family:\000038}}
 li > ul,
 li > ol,
 li > dl {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 /**
  * Have a numbered `ul` without the semantics implied by using an `ol`.
  */
 /*ul*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_lists\.scss}line{font-family:\0000318}}
 .numbered-list {
-  list-style-type: decimal;
-}
+  list-style-type: decimal; }
 
 /**
  * Removes the indentation and the bullets from a list
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_lists\.scss}line{font-family:\0000325}}
 .bare-list {
   margin: 0;
   padding: 0;
-  list-style: none;
-}
+  list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_lists\.scss}line{font-family:\0000331}}
 .block-list, .form-fields, .check-list {
   list-style: none;
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_lists\.scss}line{font-family:\0000335}}
-.block-list > li a, .form-fields > li a, .check-list > li a {
-  display: block;
-}
+  margin: 0; }
+  .block-list > li a, .form-fields > li a, .check-list > li a {
+    display: block; }
 
 /*------------------------------------*\
     $TABLES
@@ -1260,50 +1072,39 @@ li > dl {
 /**
  * Baseline styles
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000315}}
 table {
   max-width: 100%;
   width: 100%;
   /* [1] */
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000324}}
 .table {
   padding: 0;
   list-style: none;
   display: table;
   table-layout: fixed;
-  /* [2] */
-}
+  /* [2] */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000333}}
 .table {
   padding: 0;
   list-style: none;
   display: table;
   table-layout: fixed;
-  /* [2] */
-}
+  /* [2] */ }
 
 /**
  * The cells
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000348}}
 th {
-  text-align: left;
-}
+  text-align: left; }
 
 	/**
 	 * The cells
      */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000355}}
 th {
-  text-align: left;
-}
+  text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000359}}
 th, td,
 .table__item,
 th,
@@ -1311,78 +1112,63 @@ td,
 .table__item {
   line-height: 1.61111;
   padding: 14.5px;
-  padding: 0.80556rem;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000367}}
-th .table__item,
-th th,
-th td,
-th .table__item, td .table__item,
-td th,
-td td,
-td .table__item,
-.table__item .table__item,
-.table__item th,
-.table__item td,
-.table__item .table__item,
-th .table__item,
-td .table__item,
-.table__item .table__item,
-th th,
-td th,
-.table__item th,
-th td,
-td td,
-.table__item td,
-th .table__item,
-td .table__item,
-.table__item .table__item {
-  display: table-cell;
-  /* [3] */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_tables\.scss}line{font-family:\0000379}}
-th .table__content, td .table__content,
-.table__item .table__content,
-th .table__content,
-td .table__content,
-.table__item .table__content {
-  display: block;
-  /* [4] */
-}
+  padding: 0.80556rem; }
+  th .table__item,
+  th th,
+  th td,
+  th .table__item, td .table__item,
+  td th,
+  td td,
+  td .table__item,
+  .table__item .table__item,
+  .table__item th,
+  .table__item td,
+  .table__item .table__item,
+  th .table__item,
+  td .table__item,
+  .table__item .table__item,
+  th th,
+  td th,
+  .table__item th,
+  th td,
+  td td,
+  .table__item td,
+  th .table__item,
+  td .table__item,
+  .table__item .table__item {
+    display: table-cell;
+    /* [3] */ }
+  th .table__content, td .table__content,
+  .table__item .table__content,
+  th .table__content,
+  td .table__content,
+  .table__item .table__content {
+    display: block;
+    /* [4] */ }
 
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\000035}}
 fieldset {
   border: 0;
   padding: 29px;
-  padding: 1.61111rem;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000310}}
-fieldset + fieldset {
-  margin-bottom: 0;
-}
+  padding: 1.61111rem; }
+  fieldset + fieldset {
+    margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000316}}
 .form__inputs:first-of-type {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000320}}
 .form__actions {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000325}}
 legend {
   display: block;
   width: 100%;
   padding: 0;
   font-size: 22.5px;
   font-size: 1.25rem;
-  line-height: 1.28889;
-}
+  line-height: 1.28889; }
 
 /**
  * Text Inputs and Form Control
@@ -1399,12 +1185,9 @@ legend {
  * choose
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000348}}
 .text-input:hover, textarea:hover {
-  border-color: #8c8c8c;
-}
+  border-color: #8c8c8c; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000353}}
 .text-input, .form-control {
   display: block;
   width: 100%;
@@ -1423,12 +1206,9 @@ legend {
   padding-left: 14.5px;
   padding-left: 0.80556rem;
   padding-right: 14.5px;
-  padding-right: 0.80556rem;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\0000377}}
-.text-input.disabled, .form-control.disabled {
-  cursor: not-allowed;
-}
+  padding-right: 0.80556rem; }
+  .text-input.disabled, .form-control.disabled {
+    cursor: not-allowed; }
 
 /**
  * Group sets of form fields in a list, e.g.:
@@ -1449,10 +1229,8 @@ legend {
    </ul>
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003109}}
 .form-fields > li:last-child {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 /**
  * Labels
@@ -1480,7 +1258,6 @@ legend {
   </li>
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003141}}
 label,
 .label {
   display: block;
@@ -1493,8 +1270,7 @@ label,
   margin-bottom: 6px;
   /* 9 */
   margin-bottom: 0.33333rem;
-  /* 9 */
-}
+  /* 9 */ }
 
 /**
  * Extra help text in `label`s, e.g.:
@@ -1502,14 +1278,11 @@ label,
    <label>Card number <small class=additional>No spaces</small></label>
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003152}}
 .additional {
   display: block;
   font-weight: normal;
-  font-style: italic;
-}
+  font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003158}}
 input + .additional {
   /* 3 */
   /* 3 */
@@ -1520,10 +1293,8 @@ input + .additional {
   margin-top: 6px;
   /* 9 */
   margin-top: 0.33333rem;
-  /* 9 */
-}
+  /* 9 */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003162}}
 .additional, .check-list > li {
   /* 3 */
   /* 3 */
@@ -1534,8 +1305,7 @@ input + .additional {
   margin-bottom: 12px;
   /* 9 */
   margin-bottom: 0.66667rem;
-  /* 9 */
-}
+  /* 9 */ }
 
 /*
  * Groups of checkboxes and radios, e.g.:
@@ -1555,12 +1325,10 @@ input + .additional {
 /*
  * Labels in check-lists
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003188}}
 .check-label,
 .check-list label,
 .check-list .label {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Spoken forms are for forms that read like spoken word, e.g.:
@@ -1577,11 +1345,9 @@ input + .additional {
    </li>
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003211}}
 .spoken-form label {
   display: inline-block;
-  font: inherit;
-}
+  font: inherit; }
 
 /**
  * Extra help text displayed after a field when that field is in focus, e.g.:
@@ -1596,21 +1362,17 @@ input + .additional {
  *
  */
 /*small*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003230}}
 .form-help {
   display: block;
   visibility: hidden;
-  max-height: 0;
-}
+  max-height: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_forms\.scss}line{font-family:\00003235}}
 .text-input:active + .form-help,
 .text-input:focus + .form-help {
   visibility: visible;
   max-height: inherit;
   margin-top: 6px;
-  margin-top: 0.33333rem;
-}
+  margin-top: 0.33333rem; }
 
 /**
  * Objects and abstractions
@@ -1670,15 +1432,13 @@ input + .additional {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\0000370}}
 .grid {
   list-style: none;
   /* [1] */
   margin: 0;
   /* [2] */
   padding: 0;
-  /* [2] */
-}
+  /* [2] */ }
 
 /**
  * 1. Cause columns to stack side-by-side.
@@ -1689,7 +1449,6 @@ input + .additional {
  * 4. Space columns apart.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003103}}
 .grid__item {
   float: left;
   vertical-align: top;
@@ -1701,57 +1460,42 @@ input + .additional {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  /* [5] */
-}
+  /* [5] */ }
 
 /**
  * Reversed grids allow you to structure your source in the opposite order to
  * how your rendered layout will appear. Extends `.grid`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003128}}
 .grid--rev {
   direction: rtl;
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003132}}
-.grid--rev > .grid__item {
-  direction: ltr;
-  text-align: left;
-}
+  text-align: left; }
+  .grid--rev > .grid__item {
+    direction: ltr;
+    text-align: left; }
 
 /**
  * Align the entire grid to the right. Extends `.grid`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003142}}
 .grid--right {
-  text-align: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003145}}
-.grid--right > .grid__item {
-  text-align: left;
-}
+  text-align: right; }
+  .grid--right > .grid__item {
+    text-align: left; }
 
 /**
  * Centered grids align grid items centrally without needing to use push or pull
  * classes. Extends `.grid`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003155}}
 .grid--center {
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003158}}
-.grid--center > .grid__item {
-  text-align: left;
-}
+  text-align: center; }
+  .grid--center > .grid__item {
+    text-align: left; }
 
 /**
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
  * `.grid`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003169}}
 .grid--middle > .grid__item {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*------------------------------------*\
     $WIDTHS
@@ -1765,203 +1509,143 @@ input + .additional {
 /**
  * Whole
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003190}}
 .one-whole {
-  width: 100%;
-}
+  width: 100%; }
 
 /**
  * Halves
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003196}}
 .one-half,
 .two-quarters,
 .three-sixths,
 .four-eighths,
 .five-tenths,
 .six-twelfths {
-  width: 50%;
-}
+  width: 50%; }
 
 /**
  * Thirds.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003206}}
 .one-third,
 .two-sixths,
 .three-ninths,
 .four-twelfths {
-  width: 33.33333%;
-}
+  width: 33.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003210}}
 .two-thirds,
 .four-sixths,
 .six-ninths,
 .eight-twelfths {
-  width: 66.66667%;
-}
+  width: 66.66667%; }
 
 /**
  * Quarters.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003218}}
 .one-quarter,
 .two-eighths,
 .three-twelfths {
-  width: 25%;
-}
+  width: 25%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003221}}
 .three-quarters,
 .six-eighths,
 .nine-twelfths {
-  width: 75%;
-}
+  width: 75%; }
 
 /**
  * Fifths.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003228}}
 .one-fifth,
 .two-tenths {
-  width: 20%;
-}
+  width: 20%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003230}}
 .two-fifths,
 .four-tenths {
-  width: 40%;
-}
+  width: 40%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003232}}
 .three-fifths,
 .six-tenths {
-  width: 60%;
-}
+  width: 60%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003234}}
 .four-fifths,
 .eight-tenths {
-  width: 80%;
-}
+  width: 80%; }
 
 /**
  * Sixths.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003240}}
 .one-sixth,
 .two-twelfths {
-  width: 16.66667%;
-}
+  width: 16.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003242}}
 .five-sixths,
 .ten-twelfths {
-  width: 83.33333%;
-}
+  width: 83.33333%; }
 
 /**
  * Eighths.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003248}}
 .one-eighth {
-  width: 12.5%;
-}
+  width: 12.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003249}}
 .three-eighths {
-  width: 37.5%;
-}
+  width: 37.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003250}}
 .five-eighths {
-  width: 62.5%;
-}
+  width: 62.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003251}}
 .seven-eighths {
-  width: 87.5%;
-}
+  width: 87.5%; }
 
 /**
  * Ninths.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003256}}
 .one-ninth {
-  width: 11.11111%;
-}
+  width: 11.11111%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003257}}
 .two-ninths {
-  width: 22.22222%;
-}
+  width: 22.22222%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003258}}
 .four-ninths {
-  width: 44.44444%;
-}
+  width: 44.44444%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003259}}
 .five-ninths {
-  width: 55.55556%;
-}
+  width: 55.55556%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003260}}
 .seven-ninths {
-  width: 77.77778%;
-}
+  width: 77.77778%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003261}}
 .eight-ninths {
-  width: 88.88889%;
-}
+  width: 88.88889%; }
 
 /**
  * Tenths.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003266}}
 .one-tenth {
-  width: 10%;
-}
+  width: 10%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003267}}
 .three-tenths {
-  width: 30%;
-}
+  width: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003268}}
 .seven-tenths {
-  width: 70%;
-}
+  width: 70%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003269}}
 .nine-tenths {
-  width: 90%;
-}
+  width: 90%; }
 
 /**
  * Twelfths.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003274}}
 .one-twelfth {
-  width: 8.33333%;
-}
+  width: 8.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003275}}
 .five-twelfths {
-  width: 41.66667%;
-}
+  width: 41.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003276}}
 .seven-twelfths {
-  width: 58.33333%;
-}
+  width: 58.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003277}}
 .eleven-twelfths {
-  width: 91.66667%;
-}
+  width: 91.66667%; }
 
 /**
  * Our responsive classes, if we have enabled them.
@@ -1970,810 +1654,566 @@ input + .additional {
   /**
    * Whole
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003190}}
   .palm--one-whole {
-    width: 100%;
-  }
+    width: 100%; }
 
   /**
    * Halves
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003196}}
   .palm--one-half,
   .palm--two-quarters,
   .palm--three-sixths,
   .palm--four-eighths,
   .palm--five-tenths,
   .palm--six-twelfths {
-    width: 50%;
-  }
+    width: 50%; }
 
   /**
    * Thirds.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003206}}
   .palm--one-third,
   .palm--two-sixths,
   .palm--three-ninths,
   .palm--four-twelfths {
-    width: 33.33333%;
-  }
+    width: 33.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003210}}
   .palm--two-thirds,
   .palm--four-sixths,
   .palm--six-ninths,
   .palm--eight-twelfths {
-    width: 66.66667%;
-  }
+    width: 66.66667%; }
 
   /**
    * Quarters.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003218}}
   .palm--one-quarter,
   .palm--two-eighths,
   .palm--three-twelfths {
-    width: 25%;
-  }
+    width: 25%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003221}}
   .palm--three-quarters,
   .palm--six-eighths,
   .palm--nine-twelfths {
-    width: 75%;
-  }
+    width: 75%; }
 
   /**
    * Fifths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003228}}
   .palm--one-fifth,
   .palm--two-tenths {
-    width: 20%;
-  }
+    width: 20%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003230}}
   .palm--two-fifths,
   .palm--four-tenths {
-    width: 40%;
-  }
+    width: 40%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003232}}
   .palm--three-fifths,
   .palm--six-tenths {
-    width: 60%;
-  }
+    width: 60%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003234}}
   .palm--four-fifths,
   .palm--eight-tenths {
-    width: 80%;
-  }
+    width: 80%; }
 
   /**
    * Sixths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003240}}
   .palm--one-sixth,
   .palm--two-twelfths {
-    width: 16.66667%;
-  }
+    width: 16.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003242}}
   .palm--five-sixths,
   .palm--ten-twelfths {
-    width: 83.33333%;
-  }
+    width: 83.33333%; }
 
   /**
    * Eighths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003248}}
   .palm--one-eighth {
-    width: 12.5%;
-  }
+    width: 12.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003249}}
   .palm--three-eighths {
-    width: 37.5%;
-  }
+    width: 37.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003250}}
   .palm--five-eighths {
-    width: 62.5%;
-  }
+    width: 62.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003251}}
   .palm--seven-eighths {
-    width: 87.5%;
-  }
+    width: 87.5%; }
 
   /**
    * Ninths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003256}}
   .palm--one-ninth {
-    width: 11.11111%;
-  }
+    width: 11.11111%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003257}}
   .palm--two-ninths {
-    width: 22.22222%;
-  }
+    width: 22.22222%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003258}}
   .palm--four-ninths {
-    width: 44.44444%;
-  }
+    width: 44.44444%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003259}}
   .palm--five-ninths {
-    width: 55.55556%;
-  }
+    width: 55.55556%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003260}}
   .palm--seven-ninths {
-    width: 77.77778%;
-  }
+    width: 77.77778%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003261}}
   .palm--eight-ninths {
-    width: 88.88889%;
-  }
+    width: 88.88889%; }
 
   /**
    * Tenths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003266}}
   .palm--one-tenth {
-    width: 10%;
-  }
+    width: 10%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003267}}
   .palm--three-tenths {
-    width: 30%;
-  }
+    width: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003268}}
   .palm--seven-tenths {
-    width: 70%;
-  }
+    width: 70%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003269}}
   .palm--nine-tenths {
-    width: 90%;
-  }
+    width: 90%; }
 
   /**
    * Twelfths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003274}}
   .palm--one-twelfth {
-    width: 8.33333%;
-  }
+    width: 8.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003275}}
   .palm--five-twelfths {
-    width: 41.66667%;
-  }
+    width: 41.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003276}}
   .palm--seven-twelfths {
-    width: 58.33333%;
-  }
+    width: 58.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003277}}
   .palm--eleven-twelfths {
-    width: 91.66667%;
-  }
-}
+    width: 91.66667%; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   /**
    * Whole
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003190}}
   .lap--one-whole {
-    width: 100%;
-  }
+    width: 100%; }
 
   /**
    * Halves
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003196}}
   .lap--one-half,
   .lap--two-quarters,
   .lap--three-sixths,
   .lap--four-eighths,
   .lap--five-tenths,
   .lap--six-twelfths {
-    width: 50%;
-  }
+    width: 50%; }
 
   /**
    * Thirds.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003206}}
   .lap--one-third,
   .lap--two-sixths,
   .lap--three-ninths,
   .lap--four-twelfths {
-    width: 33.33333%;
-  }
+    width: 33.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003210}}
   .lap--two-thirds,
   .lap--four-sixths,
   .lap--six-ninths,
   .lap--eight-twelfths {
-    width: 66.66667%;
-  }
+    width: 66.66667%; }
 
   /**
    * Quarters.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003218}}
   .lap--one-quarter,
   .lap--two-eighths,
   .lap--three-twelfths {
-    width: 25%;
-  }
+    width: 25%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003221}}
   .lap--three-quarters,
   .lap--six-eighths,
   .lap--nine-twelfths {
-    width: 75%;
-  }
+    width: 75%; }
 
   /**
    * Fifths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003228}}
   .lap--one-fifth,
   .lap--two-tenths {
-    width: 20%;
-  }
+    width: 20%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003230}}
   .lap--two-fifths,
   .lap--four-tenths {
-    width: 40%;
-  }
+    width: 40%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003232}}
   .lap--three-fifths,
   .lap--six-tenths {
-    width: 60%;
-  }
+    width: 60%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003234}}
   .lap--four-fifths,
   .lap--eight-tenths {
-    width: 80%;
-  }
+    width: 80%; }
 
   /**
    * Sixths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003240}}
   .lap--one-sixth,
   .lap--two-twelfths {
-    width: 16.66667%;
-  }
+    width: 16.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003242}}
   .lap--five-sixths,
   .lap--ten-twelfths {
-    width: 83.33333%;
-  }
+    width: 83.33333%; }
 
   /**
    * Eighths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003248}}
   .lap--one-eighth {
-    width: 12.5%;
-  }
+    width: 12.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003249}}
   .lap--three-eighths {
-    width: 37.5%;
-  }
+    width: 37.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003250}}
   .lap--five-eighths {
-    width: 62.5%;
-  }
+    width: 62.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003251}}
   .lap--seven-eighths {
-    width: 87.5%;
-  }
+    width: 87.5%; }
 
   /**
    * Ninths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003256}}
   .lap--one-ninth {
-    width: 11.11111%;
-  }
+    width: 11.11111%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003257}}
   .lap--two-ninths {
-    width: 22.22222%;
-  }
+    width: 22.22222%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003258}}
   .lap--four-ninths {
-    width: 44.44444%;
-  }
+    width: 44.44444%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003259}}
   .lap--five-ninths {
-    width: 55.55556%;
-  }
+    width: 55.55556%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003260}}
   .lap--seven-ninths {
-    width: 77.77778%;
-  }
+    width: 77.77778%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003261}}
   .lap--eight-ninths {
-    width: 88.88889%;
-  }
+    width: 88.88889%; }
 
   /**
    * Tenths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003266}}
   .lap--one-tenth {
-    width: 10%;
-  }
+    width: 10%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003267}}
   .lap--three-tenths {
-    width: 30%;
-  }
+    width: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003268}}
   .lap--seven-tenths {
-    width: 70%;
-  }
+    width: 70%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003269}}
   .lap--nine-tenths {
-    width: 90%;
-  }
+    width: 90%; }
 
   /**
    * Twelfths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003274}}
   .lap--one-twelfth {
-    width: 8.33333%;
-  }
+    width: 8.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003275}}
   .lap--five-twelfths {
-    width: 41.66667%;
-  }
+    width: 41.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003276}}
   .lap--seven-twelfths {
-    width: 58.33333%;
-  }
+    width: 58.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003277}}
   .lap--eleven-twelfths {
-    width: 91.66667%;
-  }
-}
+    width: 91.66667%; } }
 @media only screen and (max-width: 1023px) {
   /**
    * Whole
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003190}}
   .portable--one-whole {
-    width: 100%;
-  }
+    width: 100%; }
 
   /**
    * Halves
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003196}}
   .portable--one-half,
   .portable--two-quarters,
   .portable--three-sixths,
   .portable--four-eighths,
   .portable--five-tenths,
   .portable--six-twelfths {
-    width: 50%;
-  }
+    width: 50%; }
 
   /**
    * Thirds.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003206}}
   .portable--one-third,
   .portable--two-sixths,
   .portable--three-ninths,
   .portable--four-twelfths {
-    width: 33.33333%;
-  }
+    width: 33.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003210}}
   .portable--two-thirds,
   .portable--four-sixths,
   .portable--six-ninths,
   .portable--eight-twelfths {
-    width: 66.66667%;
-  }
+    width: 66.66667%; }
 
   /**
    * Quarters.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003218}}
   .portable--one-quarter,
   .portable--two-eighths,
   .portable--three-twelfths {
-    width: 25%;
-  }
+    width: 25%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003221}}
   .portable--three-quarters,
   .portable--six-eighths,
   .portable--nine-twelfths {
-    width: 75%;
-  }
+    width: 75%; }
 
   /**
    * Fifths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003228}}
   .portable--one-fifth,
   .portable--two-tenths {
-    width: 20%;
-  }
+    width: 20%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003230}}
   .portable--two-fifths,
   .portable--four-tenths {
-    width: 40%;
-  }
+    width: 40%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003232}}
   .portable--three-fifths,
   .portable--six-tenths {
-    width: 60%;
-  }
+    width: 60%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003234}}
   .portable--four-fifths,
   .portable--eight-tenths {
-    width: 80%;
-  }
+    width: 80%; }
 
   /**
    * Sixths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003240}}
   .portable--one-sixth,
   .portable--two-twelfths {
-    width: 16.66667%;
-  }
+    width: 16.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003242}}
   .portable--five-sixths,
   .portable--ten-twelfths {
-    width: 83.33333%;
-  }
+    width: 83.33333%; }
 
   /**
    * Eighths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003248}}
   .portable--one-eighth {
-    width: 12.5%;
-  }
+    width: 12.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003249}}
   .portable--three-eighths {
-    width: 37.5%;
-  }
+    width: 37.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003250}}
   .portable--five-eighths {
-    width: 62.5%;
-  }
+    width: 62.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003251}}
   .portable--seven-eighths {
-    width: 87.5%;
-  }
+    width: 87.5%; }
 
   /**
    * Ninths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003256}}
   .portable--one-ninth {
-    width: 11.11111%;
-  }
+    width: 11.11111%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003257}}
   .portable--two-ninths {
-    width: 22.22222%;
-  }
+    width: 22.22222%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003258}}
   .portable--four-ninths {
-    width: 44.44444%;
-  }
+    width: 44.44444%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003259}}
   .portable--five-ninths {
-    width: 55.55556%;
-  }
+    width: 55.55556%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003260}}
   .portable--seven-ninths {
-    width: 77.77778%;
-  }
+    width: 77.77778%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003261}}
   .portable--eight-ninths {
-    width: 88.88889%;
-  }
+    width: 88.88889%; }
 
   /**
    * Tenths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003266}}
   .portable--one-tenth {
-    width: 10%;
-  }
+    width: 10%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003267}}
   .portable--three-tenths {
-    width: 30%;
-  }
+    width: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003268}}
   .portable--seven-tenths {
-    width: 70%;
-  }
+    width: 70%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003269}}
   .portable--nine-tenths {
-    width: 90%;
-  }
+    width: 90%; }
 
   /**
    * Twelfths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003274}}
   .portable--one-twelfth {
-    width: 8.33333%;
-  }
+    width: 8.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003275}}
   .portable--five-twelfths {
-    width: 41.66667%;
-  }
+    width: 41.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003276}}
   .portable--seven-twelfths {
-    width: 58.33333%;
-  }
+    width: 58.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003277}}
   .portable--eleven-twelfths {
-    width: 91.66667%;
-  }
-}
+    width: 91.66667%; } }
 @media only screen and (min-width: 1024px) {
   /**
    * Whole
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003190}}
   .desk--one-whole {
-    width: 100%;
-  }
+    width: 100%; }
 
   /**
    * Halves
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003196}}
   .desk--one-half,
   .desk--two-quarters,
   .desk--three-sixths,
   .desk--four-eighths,
   .desk--five-tenths,
   .desk--six-twelfths {
-    width: 50%;
-  }
+    width: 50%; }
 
   /**
    * Thirds.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003206}}
   .desk--one-third,
   .desk--two-sixths,
   .desk--three-ninths,
   .desk--four-twelfths {
-    width: 33.33333%;
-  }
+    width: 33.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003210}}
   .desk--two-thirds,
   .desk--four-sixths,
   .desk--six-ninths,
   .desk--eight-twelfths {
-    width: 66.66667%;
-  }
+    width: 66.66667%; }
 
   /**
    * Quarters.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003218}}
   .desk--one-quarter,
   .desk--two-eighths,
   .desk--three-twelfths {
-    width: 25%;
-  }
+    width: 25%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003221}}
   .desk--three-quarters,
   .desk--six-eighths,
   .desk--nine-twelfths {
-    width: 75%;
-  }
+    width: 75%; }
 
   /**
    * Fifths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003228}}
   .desk--one-fifth,
   .desk--two-tenths {
-    width: 20%;
-  }
+    width: 20%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003230}}
   .desk--two-fifths,
   .desk--four-tenths {
-    width: 40%;
-  }
+    width: 40%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003232}}
   .desk--three-fifths,
   .desk--six-tenths {
-    width: 60%;
-  }
+    width: 60%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003234}}
   .desk--four-fifths,
   .desk--eight-tenths {
-    width: 80%;
-  }
+    width: 80%; }
 
   /**
    * Sixths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003240}}
   .desk--one-sixth,
   .desk--two-twelfths {
-    width: 16.66667%;
-  }
+    width: 16.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003242}}
   .desk--five-sixths,
   .desk--ten-twelfths {
-    width: 83.33333%;
-  }
+    width: 83.33333%; }
 
   /**
    * Eighths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003248}}
   .desk--one-eighth {
-    width: 12.5%;
-  }
+    width: 12.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003249}}
   .desk--three-eighths {
-    width: 37.5%;
-  }
+    width: 37.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003250}}
   .desk--five-eighths {
-    width: 62.5%;
-  }
+    width: 62.5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003251}}
   .desk--seven-eighths {
-    width: 87.5%;
-  }
+    width: 87.5%; }
 
   /**
    * Ninths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003256}}
   .desk--one-ninth {
-    width: 11.11111%;
-  }
+    width: 11.11111%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003257}}
   .desk--two-ninths {
-    width: 22.22222%;
-  }
+    width: 22.22222%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003258}}
   .desk--four-ninths {
-    width: 44.44444%;
-  }
+    width: 44.44444%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003259}}
   .desk--five-ninths {
-    width: 55.55556%;
-  }
+    width: 55.55556%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003260}}
   .desk--seven-ninths {
-    width: 77.77778%;
-  }
+    width: 77.77778%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003261}}
   .desk--eight-ninths {
-    width: 88.88889%;
-  }
+    width: 88.88889%; }
 
   /**
    * Tenths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003266}}
   .desk--one-tenth {
-    width: 10%;
-  }
+    width: 10%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003267}}
   .desk--three-tenths {
-    width: 30%;
-  }
+    width: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003268}}
   .desk--seven-tenths {
-    width: 70%;
-  }
+    width: 70%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003269}}
   .desk--nine-tenths {
-    width: 90%;
-  }
+    width: 90%; }
 
   /**
    * Twelfths.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003274}}
   .desk--one-twelfth {
-    width: 8.33333%;
-  }
+    width: 8.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003275}}
   .desk--five-twelfths {
-    width: 41.66667%;
-  }
+    width: 41.66667%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003276}}
   .desk--seven-twelfths {
-    width: 58.33333%;
-  }
+    width: 58.33333%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/core\/_grids\.scss}line{font-family:\00003277}}
   .desk--eleven-twelfths {
-    width: 91.66667%;
-  }
-}
+    width: 91.66667%; } }
 /*------------------------------------*\
     $PUSH
 \*------------------------------------*/
@@ -2792,7 +2232,6 @@ input + .additional {
 /**
  * Base button styles
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\000038}}
 .button {
   display: inline-block;
   vertical-align: middle;
@@ -2862,48 +2301,35 @@ input + .additional {
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none;
-}
+  user-select: none; }
 
 /**
  * Base button states
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000350}}
 .button,
 .button:hover,
 .button:focus,
 .button:active,
 .button:visited {
   color: #444444;
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000359}}
+  text-decoration: none; }
 .button:hover {
   background-color: #b3b3b3;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000364}}
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
 .button:active,
 .button:focus {
   outline: none;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000370}}
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset; }
 .button:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000374}}
+  outline-offset: -2px; }
 .button:active {
   outline: 0;
-  background-image: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000379}}
+  background-image: none; }
 .button::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 	/**
 	 * Button size modifiers
@@ -2911,96 +2337,87 @@ input + .additional {
 	 * These all follow the same sizing rules as above; text is 1em, space around it
      * remains uniform.
 	 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000397}}
 .button {
   /**
    * These buttons will fill the entirety of their container.
    *
    * 1. Remove padding so that widths and paddings don’t conflict.
-   */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\0000399}}
-.button--small {
-  line-height: 2;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  height: 24px;
-  /* 9 */
-  height: 1.33333rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  padding-left: 8px;
-  /* 9 */
-  padding-left: 0.44444rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  padding-right: 8px;
-  /* 9 */
-  padding-right: 0.44444rem;
-  /* 9 */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003108}}
-.button--large {
-  line-height: 4;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  height: 64px;
-  /* 9 */
-  height: 3.55556rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  padding-left: 30px;
-  /* 9 */
-  padding-left: 1.66667rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  padding-right: 30px;
-  /* 9 */
-  padding-right: 1.66667rem;
-  /* 9 */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003122}}
-.button--full {
-  width: 100%;
-  padding-right: 0;
-  /* [1] */
-  padding-left: 0;
-  /* [1] */
-  text-align: center;
-}
+   */ }
+  .button--small {
+    line-height: 2;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 24px;
+    /* 9 */
+    height: 1.33333rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-left: 8px;
+    /* 9 */
+    padding-left: 0.44444rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-right: 8px;
+    /* 9 */
+    padding-right: 0.44444rem;
+    /* 9 */ }
+  .button--large {
+    line-height: 4;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 64px;
+    /* 9 */
+    height: 3.55556rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-left: 30px;
+    /* 9 */
+    padding-left: 1.66667rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-right: 30px;
+    /* 9 */
+    padding-right: 1.66667rem;
+    /* 9 */ }
+  .button--full {
+    width: 100%;
+    padding-right: 0;
+    /* [1] */
+    padding-left: 0;
+    /* [1] */
+    text-align: center; }
 
 /**
  * Button font-size modifiers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003139}}
 .button--alpha {
   /* 3 */
   /* 3 */
@@ -3011,9 +2428,7 @@ input + .additional {
   font-size: 30px;
   /* 9 */
   font-size: 1.66667rem;
-  /* 9 */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003143}}
+  /* 9 */ }
 .button--beta {
   /* 3 */
   /* 3 */
@@ -3024,9 +2439,7 @@ input + .additional {
   font-size: 24px;
   /* 9 */
   font-size: 1.33333rem;
-  /* 9 */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003147}}
+  /* 9 */ }
 .button--gamma {
   /* 3 */
   /* 3 */
@@ -3037,8 +2450,7 @@ input + .additional {
   font-size: 16px;
   /* 9 */
   font-size: 0.88889rem;
-  /* 9 */
-}
+  /* 9 */ }
 
 /**
  * Button Functions
@@ -3049,7 +2461,6 @@ input + .additional {
  *
  * 1. Make the button look like normal text when hovered.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003166}}
 .button--inactive,
 .button--inactive:hover,
 .button--inactive:active,
@@ -3066,10 +2477,8 @@ input[disabled]:focus,
   color: #777 !important;
   cursor: text;
   /* [1] */
-  box-shadow: none;
-}
+  box-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003173}}
 .button {
   /**
    * Positive actions; e.g. sign in, purchase, submit, etc.
@@ -3079,44 +2488,30 @@ input[disabled]:focus,
    */
   /**
    * Inactive, disabled buttons.
-   */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003178}}
-.button--positive {
-  background-color: #4A993E;
-  border-color: #38752f;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003182}}
-.button--positive,
-.button--positive:hover,
-.button--positive:focus,
-.button--positive:active,
-.button--positive:visited {
-  color: #fff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003190}}
-.button--positive:hover {
-  background-color: #38752f;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003198}}
-.button--negative {
-  background-color: #b33630;
-  border-color: #8b2a25;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003203}}
-.button--negative,
-.button--negative:hover,
-.button--negative:focus,
-.button--negative:active,
-.button--negative:visited {
-  color: #fff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003211}}
-.button--negative:hover {
-  background-color: #8b2a25;
-}
+   */ }
+  .button--positive {
+    background-color: #4A993E;
+    border-color: #38752f; }
+    .button--positive,
+    .button--positive:hover,
+    .button--positive:focus,
+    .button--positive:active,
+    .button--positive:visited {
+      color: #fff; }
+    .button--positive:hover {
+      background-color: #38752f; }
+  .button--negative {
+    background-color: #b33630;
+    border-color: #8b2a25; }
+    .button--negative,
+    .button--negative:hover,
+    .button--negative:focus,
+    .button--negative:active,
+    .button--negative:visited {
+      color: #fff; }
+    .button--negative:hover {
+      background-color: #8b2a25; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/components\/_buttons\.scss}line{font-family:\00003232}}
 button[disabled], button[disabled]:hover, button[disabled]:active, button[disabled]:focus,
 input[disabled],
 input[disabled]:hover,
@@ -3126,8 +2521,7 @@ input[disabled]:focus,
 .button--disabled:hover,
 .button--disabled:active,
 .button--disabled:focus {
-  cursor: not-allowed;
-}
+  cursor: not-allowed; }
 
 /**
  * Style trumps; helper and brand classes
@@ -3143,482 +2537,314 @@ input[disabled]:focus,
 /**
  * Add margins.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000337}}
 .m {
-  margin: 29px !important;
-}
+  margin: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000338}}
 .mt {
-  margin-top: 29px !important;
-}
+  margin-top: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000339}}
 .mr {
-  margin-right: 29px !important;
-}
+  margin-right: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000340}}
 .mb {
-  margin-bottom: 29px !important;
-}
+  margin-bottom: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000341}}
 .ml {
-  margin-left: 29px !important;
-}
+  margin-left: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000342}}
 .me {
   margin-top: 29px !important;
-  margin-bottom: 29px !important;
-}
+  margin-bottom: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000343}}
 .ms {
   margin-right: 29px !important;
-  margin-left: 29px !important;
-}
+  margin-left: 29px !important; }
 
 /**
  * Tiny margins.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000353}}
 .m-- {
-  margin: 7.25px !important;
-}
+  margin: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000354}}
 .mt-- {
-  margin-top: 7.25px !important;
-}
+  margin-top: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000355}}
 .mr-- {
-  margin-right: 7.25px !important;
-}
+  margin-right: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000356}}
 .mb-- {
-  margin-bottom: 7.25px !important;
-}
+  margin-bottom: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000357}}
 .ml-- {
-  margin-left: 7.25px !important;
-}
+  margin-left: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000358}}
 .ms-- {
   margin-top: 7.25px !important;
-  margin-bottom: 7.25px !important;
-}
+  margin-bottom: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000359}}
 .me-- {
   margin-right: 7.25px !important;
-  margin-left: 7.25px !important;
-}
+  margin-left: 7.25px !important; }
 
 /**
 * Small margins.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000368}}
 .m- {
-  margin: 14.5px !important;
-}
+  margin: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000369}}
 .mt- {
-  margin-top: 14.5px !important;
-}
+  margin-top: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000370}}
 .mr- {
-  margin-right: 14.5px !important;
-}
+  margin-right: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000371}}
 .mb- {
-  margin-bottom: 14.5px !important;
-}
+  margin-bottom: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000372}}
 .ml- {
-  margin-left: 14.5px !important;
-}
+  margin-left: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000373}}
 .me- {
   margin-top: 14.5px !important;
-  margin-bottom: 14.5px !important;
-}
+  margin-bottom: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000374}}
 .ms- {
   margin-right: 14.5px !important;
-  margin-left: 14.5px !important;
-}
+  margin-left: 14.5px !important; }
 
 /**
  * Large Margins.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000384}}
 .m + {
-  margin: 58px !important;
-}
+  margin: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000385}}
 .mt + {
-  margin-top: 58px !important;
-}
+  margin-top: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000386}}
 .mr + {
-  margin-right: 58px !important;
-}
+  margin-right: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000387}}
 .mb + {
-  margin-bottom: 58px !important;
-}
+  margin-bottom: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000388}}
 .ml + {
-  margin-left: 58px !important;
-}
+  margin-left: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000389}}
 .ms + {
   margin-top: 58px !important;
-  margin-bottom: 58px !important;
-}
+  margin-bottom: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\0000390}}
 .me + {
   margin-right: 58px !important;
-  margin-left: 58px !important;
-}
+  margin-left: 58px !important; }
 
 /**
  * Huge Margins.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003100}}
 .m + + {
-  margin: 116px !important;
-}
+  margin: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003101}}
 .mt + + {
-  margin-top: 116px !important;
-}
+  margin-top: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003102}}
 .mr + + {
-  margin-right: 116px !important;
-}
+  margin-right: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003103}}
 .mb + + {
-  margin-bottom: 116px !important;
-}
+  margin-bottom: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003104}}
 .ml + + {
-  margin-left: 116px !important;
-}
+  margin-left: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003105}}
 .ms + + {
   margin-top: 116px !important;
-  margin-bottom: 116px !important;
-}
+  margin-bottom: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003106}}
 .me + + {
   margin-right: 116px !important;
-  margin-left: 116px !important;
-}
+  margin-left: 116px !important; }
 
 /**
  * Remove margins.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003116}}
 .m0 {
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003117}}
 .mt0 {
-  margin-top: 0 !important;
-}
+  margin-top: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003118}}
 .mr0 {
-  margin-right: 0 !important;
-}
+  margin-right: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003119}}
 .mb0 {
-  margin-bottom: 0 !important;
-}
+  margin-bottom: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003120}}
 .ml0 {
-  margin-left: 0 !important;
-}
+  margin-left: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003121}}
 .me0 {
   margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
+  margin-bottom: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003122}}
 .ms0 {
   margin-right: 0 !important;
-  margin-left: 0 !important;
-}
+  margin-left: 0 !important; }
 
 /**
  * Add paddings.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003136}}
 .p {
-  padding: 29px !important;
-}
+  padding: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003137}}
 .pt {
-  padding-top: 29px !important;
-}
+  padding-top: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003138}}
 .pr {
-  padding-right: 29px !important;
-}
+  padding-right: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003139}}
 .pb {
-  padding-bottom: 29px !important;
-}
+  padding-bottom: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003140}}
 .pl {
-  padding-left: 29px !important;
-}
+  padding-left: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003141}}
 .pe {
   padding-top: 29px !important;
-  padding-bottom: 29px !important;
-}
+  padding-bottom: 29px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003142}}
 .ps {
   padding-right: 29px !important;
-  padding-left: 29px !important;
-}
+  padding-left: 29px !important; }
 
 /**
  * Tiny paddings.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003151}}
 .p-- {
-  padding: 7.25px !important;
-}
+  padding: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003152}}
 .pt-- {
-  padding-top: 7.25px !important;
-}
+  padding-top: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003153}}
 .pr-- {
-  padding-right: 7.25px !important;
-}
+  padding-right: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003154}}
 .pb-- {
-  padding-bottom: 7.25px !important;
-}
+  padding-bottom: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003155}}
 .pl-- {
-  padding-left: 7.25px !important;
-}
+  padding-left: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003156}}
 .pe-- {
   padding-top: 7.25px !important;
-  padding-bottom: 7.25px !important;
-}
+  padding-bottom: 7.25px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003157}}
 .ps-- {
   padding-right: 7.25px !important;
-  padding-left: 7.25px !important;
-}
+  padding-left: 7.25px !important; }
 
 /**
  * Small paddings.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003166}}
 .p- {
-  padding: 14.5px !important;
-}
+  padding: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003167}}
 .pt- {
-  padding-top: 14.5px !important;
-}
+  padding-top: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003168}}
 .pr- {
-  padding-right: 14.5px !important;
-}
+  padding-right: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003169}}
 .pb- {
-  padding-bottom: 14.5px !important;
-}
+  padding-bottom: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003170}}
 .pl- {
-  padding-left: 14.5px !important;
-}
+  padding-left: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003171}}
 .pe- {
   padding-top: 14.5px !important;
-  padding-bottom: 14.5px !important;
-}
+  padding-bottom: 14.5px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003172}}
 .ps- {
   padding-right: 14.5px !important;
-  padding-left: 14.5px !important;
-}
+  padding-left: 14.5px !important; }
 
 /**
  * Large paddings.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003181}}
 .p + {
-  padding: 58px !important;
-}
+  padding: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003182}}
 .pt + {
-  padding-top: 58px !important;
-}
+  padding-top: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003183}}
 .pr + {
-  padding-right: 58px !important;
-}
+  padding-right: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003184}}
 .pb + {
-  padding-bottom: 58px !important;
-}
+  padding-bottom: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003185}}
 .pl + {
-  padding-left: 58px !important;
-}
+  padding-left: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003186}}
 .pe + {
   padding-top: 58px !important;
-  padding-bottom: 58px !important;
-}
+  padding-bottom: 58px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003187}}
 .ps + {
   padding-right: 58px !important;
-  padding-left: 58px !important;
-}
+  padding-left: 58px !important; }
 
 /**
  * Huge paddings.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003196}}
 .p + + {
-  padding: 116px !important;
-}
+  padding: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003197}}
 .pt + + {
-  padding-top: 116px !important;
-}
+  padding-top: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003198}}
 .pr + + {
-  padding-right: 116px !important;
-}
+  padding-right: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003199}}
 .pb + + {
-  padding-bottom: 116px !important;
-}
+  padding-bottom: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003200}}
 .pl + + {
-  padding-left: 116px !important;
-}
+  padding-left: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003201}}
 .pe + + {
   padding-top: 116px !important;
-  padding-bottom: 116px !important;
-}
+  padding-bottom: 116px !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003202}}
 .ps + + {
   padding-right: 116px !important;
-  padding-left: 116px !important;
-}
+  padding-left: 116px !important; }
 
 /**
  * Remove paddings.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003211}}
 .p0 {
-  padding: 0 !important;
-}
+  padding: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003212}}
 .pt0 {
-  padding-top: 0 !important;
-}
+  padding-top: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003213}}
 .pr0 {
-  padding-right: 0 !important;
-}
+  padding-right: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003214}}
 .pb0 {
-  padding-bottom: 0 !important;
-}
+  padding-bottom: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003215}}
 .pl0 {
-  padding-left: 0 !important;
-}
+  padding-left: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003216}}
 .pe0 {
   padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
+  padding-bottom: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_spacing\.scss}line{font-family:\00003217}}
 .ps0 {
   padding-right: 0 !important;
-  padding-left: 0 !important;
-}
+  padding-left: 0 !important; }
 
 /*------------------------------------*\
     $HELPER
@@ -3635,93 +2861,65 @@ input[disabled]:focus,
 /**
  * Add/remove floats
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000318}}
 .float--right {
-  float: right !important;
-}
+  float: right !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000319}}
 .float--left {
-  float: left !important;
-}
+  float: left !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000320}}
 .float--none {
-  float: none !important;
-}
+  float: none !important; }
 
 /**
  * Text alignment
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000326}}
 .text--left {
-  text-align: left  !important;
-}
+  text-align: left  !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000327}}
 .text--center {
-  text-align: center !important;
-}
+  text-align: center !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000328}}
 .text--right {
-  text-align: right !important;
-}
+  text-align: right !important; }
 
 /**
  * Font weights
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000334}}
 .weight--light, h1, .h1 {
-  font-weight: 100 !important;
-}
+  font-weight: 100 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000335}}
 .weight--semi-light, h2, .h2, h3, .h3 {
-  font-weight: 300 !important;
-}
+  font-weight: 300 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000336}}
 .weight--normal, h4, .h4, h5, .h5 {
-  font-weight: 400 !important;
-}
+  font-weight: 400 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000337}}
 .weight--semibold, h6, .h6 {
-  font-weight: 600 !important;
-}
+  font-weight: 600 !important; }
 
 /**
  * Pull items full width of `.island` parents.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000344}}
 .full-bleed {
   margin-right: -29px !important;
-  margin-left: -29px !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000348}}
-.islet .full-bleed {
-  margin-right: -14.5px !important;
-  margin-left: -14.5px !important;
-}
+  margin-left: -29px !important; }
+  .islet .full-bleed {
+    margin-right: -14.5px !important;
+    margin-left: -14.5px !important; }
 
 /**
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000359}}
 .informative {
-  cursor: help !important;
-}
+  cursor: help !important; }
 
 /**
  * Mute an object by reducing its opacity.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000367}}
 .muted {
   opacity: 0.5 !important;
-  filter: alpha(opacity=50) !important;
-}
+  filter: alpha(opacity=50) !important; }
 
 /**
  * Add a right-angled quote to links that imply movement, e.g.:
@@ -3729,24 +2927,19 @@ input[disabled]:focus,
    <a href=# class=go>Read more</a>
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000379}}
 .go:after, .go:after {
-  content: "\00A0" "\00BB" !important;
-}
+  content: "\00A0" "\00BB" !important; }
 
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\0000387}}
 .caps {
-  text-transform: uppercase !important;
-}
+  text-transform: uppercase !important; }
 
 /**
  * Hide content off-screen without resorting to `display:none;`, also provide
  * breakpoint specific hidden elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003106}}
 .accessibility,
 .visuallyhidden {
   border: 0 !important;
@@ -3756,44 +2949,33 @@ input[disabled]:focus,
   overflow: hidden !important;
   padding: 0 !important;
   position: absolute !important;
-  width: 1px !important;
-}
+  width: 1px !important; }
 
 /**
  * Content Alignment
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003125}}
 .center-block, .centered {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/generic\/_helpers\.scss}line{font-family:\00003130}}
 .center-block {
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/style\.scss}line{font-family:\0000346}}
 html {
   /**
    * Other html fixes and base settings
    */
   overflow-y: scroll;
   min-height: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
+  -webkit-tap-highlight-color: transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/style\.scss}line{font-family:\0000357}}
 body {
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   width: auto;
   margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
+  margin-right: 1.25rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jamesdempsey\/Sites\/brackets\.css\/style\.scss}line{font-family:\0000368}}
 .block {
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
