@@ -7,14 +7,13 @@
  */
 %button, 
 .button {
+   
+    position: relative;
+    
 	display: inline-block;
-	vertical-align: middle;
-	white-space: nowrap;
 	cursor: pointer;
 
-	margin: 0;
-    padding-top:   0;         
-    padding-bottom:0;           
+	margin: 0;       
 	
 	background-color: $btn-default-bg;
 	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
@@ -24,20 +23,20 @@
 	
 	color: $btn-default-color;
 	font-weight: 500;
-	//line-height: ceil($btn-font-size / $btn-default-min-height) * ($btn-default-min-height / $btn-font-size);	
-	line-height: 3;
 	text-align: center;
+    letter-spacing: 0.02em;
 	vertical-align: middle;
 	overflow: visible;
+    
+	-webkit-font-smoothing: antialiased;
+    
+    @include rem-calc(padding, 6px 18px);	
+	
+    @include font-size($btn-font-size, false);
 		
-	@include font-size($btn-font-size, false);
-	
-	@include rem-calc(min-height, $btn-default-min-height);
-	
-	@include rem-calc(padding-left, 24px);
-	@include rem-calc(padding-right, 24px);
 	@include rem-calc(border-radius, $base-border-radius);
 	
+    @include vendor(transition, all 0.2s ease);
 	@include vendor(appearance, none);
 	@include user-select(none);
 }
@@ -96,22 +95,14 @@
 	 */
 	%button,
 	.button{
-			&--small{
-				line-height: 2;
-			
-				@include rem-calc(height, 24px);
-			
-				@include rem-calc(padding-left, 8px);
-				@include rem-calc(padding-right, 8px);
+			&--small{               
+				line-height: 1.75;
+                @include rem-calc(padding, 8px 22px);
 			}
 		
 			&--large{
-				line-height: 4;
-			
-				@include rem-calc(height, 64px);
-			
-				@include rem-calc(padding-left, 30px);
-				@include rem-calc(padding-right, 30px);
+				line-height: 2;
+                @include rem-calc(padding, 12px 26px);
 			}
 		
 			/**
