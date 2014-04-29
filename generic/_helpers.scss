@@ -148,9 +148,11 @@
     width:1px!important;
 }
 .accessibility,
+%accessibility,
 .visuallyhidden{
     @include accessibility;
 }
+
 @if $responsive{
     @each $state in $breakpoints{
         @include grid-media-query(#{$state}){

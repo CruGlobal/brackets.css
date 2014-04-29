@@ -52,12 +52,12 @@ legend{
 
 .text-input, .form-control{
 	display: block;
-	width: 100%;
+	width: auto;
 	
 	/** 
 	 * Make inputs at least the height of their button counterpart (base line-height + padding + border)
 	 */
-    height: $base-line-height + ($base-spacing-unit / 2) - 2px ;
+    height: $base-line-height + ($base-spacing-unit / 4) - 2px ;
 	
     padding-top: $base-line-height / 6;
     padding-bottom: $base-line-height / 6;
@@ -120,7 +120,7 @@ legend{
  * element is not suitable, e.g.:
  *
    <li>
-       <span class=label>Select an option below:</span>
+      <span class=label>Select an option below:</span>
       <ul class="multi-list  four-cols">
           <li>
               <input /> <label />
@@ -208,9 +208,12 @@ label,
    </li>
  *
  */
-.spoken-form label{
-    display:inline-block;
-    font:inherit;
+.spoken-form{
+    
+    input, select, label{
+        display:inline-block;
+        font:inherit;
+    }
 }
 
 
