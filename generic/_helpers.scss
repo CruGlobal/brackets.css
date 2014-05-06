@@ -23,9 +23,9 @@
 /**
  * Text alignment and sizing
  */
-.text--left,   %text--left       { text-align:left  !important; }
-.text--center, %text--center     { text-align:center!important; }
-.text--right,  %text--right      { text-align:right !important; }
+.text--left,   %text--left       { text-align:left; }
+.text--center, %text--center     { text-align:center; }
+.text--right,  %text--right      { text-align:right; }
 .small-text, %small-text         { font-size: 80%; }
 
 
@@ -41,16 +41,16 @@
 /**
  * View helpers
  */
-.overflow--hide, %overflow--hide{ overflow: hidden; }
-.overflow--show, %overflow--show{ overflow: visible; }
+.overflow--hide, %overflow--hide { overflow: hidden; }
+.overflow--show, %overflow--show { overflow: visible; }
 
 
 /**
  * Positioning
  */
-.position--absolute, %position--absolute{ position: absolute; }
-.position--relative, %position--relative{ position: relative; }
-.position--fixed,    %position--fixed{ position: fixed; }
+.position--absolute, %position--absolute { position: absolute; }
+.position--relative, %position--relative { position: relative; }
+.position--fixed,    %position--fixed    { position: fixed; }
 
 
 /**
