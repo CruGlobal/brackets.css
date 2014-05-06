@@ -399,6 +399,13 @@ $query-unit: 16px;
     }
 }
 
+@mixin grid-item(){
+    float: left;
+    vertical-align: top;
+    
+    @include box-sizing(border-box); 
+}
+
 
 
 /**

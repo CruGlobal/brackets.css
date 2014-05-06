@@ -54,6 +54,7 @@ $use-silent-classes: false;
     $class-type:        unquote("%");
 }
 
+$silent:   unquote("%");
 
 
 
@@ -73,6 +74,7 @@ $use-silent-classes: false;
     list-style: none;                           /* [1] */
     margin: 0;                                  /* [2] */
     padding: 0;                                 /* [2] */
+    margin-left:-$gutter;                       /* [3] */
 		
     @if $use-markup-fix != true{
         letter-spacing:-0.31em;
@@ -91,34 +93,33 @@ $use-silent-classes: false;
 }
 
 
-    /**
-     * 1. Cause columns to stack side-by-side.
-     *    - Not implemented at the moment due to legacy support
-     *
-     * 2. Align columns to the tops of each other.
-     * 3. Full-width unless told to behave otherwise.
-     * 4. Space columns apart.
-     * 5. Required to combine fluid widths and fixed gutters.
-     */
-    #{$class-type}grid__item{
-		
-       // display:inline-block;                     /* [1] */
-	    float: left;
-        vertical-align:top;                         /* [2] */
-		
-		
-        @if $mobile-first == true{
-            width:100%;                             /* [3] */
-        }
-		
-		@include box-sizing(border-box);            /* [5] */
-				
-        @if $use-markup-fix != true{
-            letter-spacing:normal;
-            word-spacing:normal;
-        }
-		
+/**
+ * 1. Cause columns to stack side-by-side.
+ *    - Not implemented at the moment due to legacy support
+ *
+ * 2. Align columns to the tops of each other.
+ * 3. Space columns apart.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+#{$class-type}grid__item{ 
+    // display:inline-block;                    /* [1] */
+    float:left;                              
+    vertical-align:top;                         /* [2] */
+    
+    padding-left:$gutter;                       /* [3] */
+    
+    @if $mobile-first == true{
+        width:100%;                             /* [4] */
     }
+        
+    @if $use-markup-fix != true{
+        letter-spacing:normal;
+        word-spacing:normal;
+    }
+    
+    @include box-sizing(border-box);            /* [5] */
+}
 
 
 /**
@@ -173,6 +174,11 @@ $use-silent-classes: false;
 
 
 
+@mixin grids($namespace:"") {
+    
+}
+
+
 
 
 /*------------------------------------*\
@@ -182,12 +188,10 @@ $use-silent-classes: false;
  * Create our width classes, prefixed by the specified namespace.
  */
 @mixin device-type($namespace:""){
-
-
     /**
      * Whole
      */
-    #{$class-type}#{$namespace}one-whole         { width:100%; }
+    #{$class-type}#{$namespace}one-whole           { width:100%;}
 
 
     /**
@@ -198,7 +202,7 @@ $use-silent-classes: false;
 	#{$class-type}#{$namespace}three-sixths,
 	#{$class-type}#{$namespace}four-eighths,
 	#{$class-type}#{$namespace}five-tenths,
-	#{$class-type}#{$namespace}six-twelfths        { width: 50% ; }
+	#{$class-type}#{$namespace}six-twelfths        { width: 50% ;}
 
 	/**
 	 * Thirds.
@@ -206,18 +210,18 @@ $use-silent-classes: false;
 	#{$class-type}#{$namespace}one-third,
 	#{$class-type}#{$namespace}two-sixths,
 	#{$class-type}#{$namespace}three-ninths,
-	#{$class-type}#{$namespace}four-twelfths       { width: 33.3333333% ; }
+	#{$class-type}#{$namespace}four-twelfths       { width: 33.3333333% ;}
 	#{$class-type}#{$namespace}two-thirds,
 	#{$class-type}#{$namespace}four-sixths,
 	#{$class-type}#{$namespace}six-ninths,
-	#{$class-type}#{$namespace}eight-twelfths      { width: 66.6666666% ; }
+	#{$class-type}#{$namespace}eight-twelfths      { width: 66.6666666% ;}
 
 	/**
 	 * Quarters.
 	 */
 	#{$class-type}#{$namespace}one-quarter,
 	#{$class-type}#{$namespace}two-eighths,
-	#{$class-type}#{$namespace}three-twelfths      { width: 25%; }
+	#{$class-type}#{$namespace}three-twelfths      { width: 25%;}
 	#{$class-type}#{$namespace}three-quarters,
 	#{$class-type}#{$namespace}six-eighths,
 	#{$class-type}#{$namespace}nine-twelfths       { width: 75%; }
@@ -226,29 +230,28 @@ $use-silent-classes: false;
 	 * Fifths.
 	 */
 	#{$class-type}#{$namespace}one-fifth,
-	#{$class-type}#{$namespace}two-tenths          { width: 20% ; }
+	#{$class-type}#{$namespace}two-tenths          { width: 20% ;}
 	#{$class-type}#{$namespace}two-fifths,
-	#{$class-type}#{$namespace}four-tenths         { width: 40% ; }
+	#{$class-type}#{$namespace}four-tenths         { width: 40% ;}
 	#{$class-type}#{$namespace}three-fifths,
-	#{$class-type}#{$namespace}six-tenths          { width: 60% ; }
+	#{$class-type}#{$namespace}six-tenths          { width: 60% ;}
 	#{$class-type}#{$namespace}four-fifths,
-	#{$class-type}#{$namespace}eight-tenths        { width: 80% ; }
+	#{$class-type}#{$namespace}eight-tenths        { width: 80% ;}
 
 	/**
 	 * Sixths.
 	 */
 	#{$class-type}#{$namespace}one-sixth,
-	#{$class-type}#{$namespace}two-twelfths        { width: 16.6666666% ; }
+	#{$class-type}#{$namespace}two-twelfths        { width: 16.6666666% ;}
 	#{$class-type}#{$namespace}five-sixths,
 	#{$class-type}#{$namespace}ten-twelfths        { width: 83.3333333% ; }
-
 	/**
 	 * Eighths.
 	 */
 	#{$class-type}#{$namespace}one-eighth          { width: 12.5% ; }
 	#{$class-type}#{$namespace}three-eighths       { width: 37.5% ; }
 	#{$class-type}#{$namespace}five-eighths        { width: 62.5% ; }
-	#{$class-type}#{$namespace}seven-eighths       { width: 87.5% ; }
+	#{$class-type}#{$namespace}seven-eighths       { width: 87.5% ;}
 
 	/**
 	 * Ninths.
@@ -278,7 +281,6 @@ $use-silent-classes: false;
 
 }
 
-
 /**
  * Our regular, non-responsive width classes.
  */
@@ -289,15 +291,13 @@ $use-silent-classes: false;
  * Our responsive classes, if we have enabled them.
  */
 @if $responsive == true{
-
     @each $name in $breakpoint-has-widths {
         @include grid-media-query($name) {
            @include device-type('#{$name}--');
         }
     }
-
-
 }
+
 
 
 

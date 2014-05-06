@@ -21,20 +21,65 @@
 
 
 /**
- * Text alignment
+ * Text alignment and sizing
  */
 .text--left,   %text--left       { text-align:left  !important; }
 .text--center, %text--center     { text-align:center!important; }
 .text--right,  %text--right      { text-align:right !important; }
+.small-text, %small-text         { font-size: 80%; }
 
 
 /**
  * Font weights
  */
 .weight--light,      %weight--light       { font-weight:100!important; }
-.weight--semi-light, %weight--semilight  { font-weight:300!important; }
+.weight--semi-light, %weight--semilight   { font-weight:300!important; }
 .weight--normal,     %weight--normal      { font-weight:400!important; }
-.weight--semibold,   %weight--semibold    { font-weight:600!important; }
+.weight--semibold,   %weight--semibold    { font-weight:500!important; }
+.weight--bold,       %weight--bold        { font-weight:600!important; }
+
+/**
+ * View helpers
+ */
+.overflow--hide, %overflow--hide{ overflow: hidden; }
+.overflow--show, %overflow--show{ overflow: visible; }
+
+
+/**
+ * Positioning
+ */
+.position--absolute, %position--absolute{ position: absolute; }
+.position--relative, %position--relative{ position: relative; }
+.position--fixed,    %position--fixed{ position: fixed; }
+
+
+/**
+ * Display
+ */
+.display--block, %display--block{ display: block;}
+.display--inline-block, %display--inline-block{ display: inline-block;}
+.display--inline, %display--inline{ display: inline;}
+.display--none, %display--none{display: none;}
+
+
+/**
+ * Sizes
+ */
+.full-height, %full-height{height: 100%;}
+.full-width, %full-width{width: 100%;}
+
+/**
+ * Content Alignment
+ */
+%centered, .centered{ margin-left: auto; margin-right: auto;}
+
+%center-block, .center-block{
+	@extend %center;
+	
+	width: 100%;
+	text-align: center;
+}
+
 
 
 
@@ -104,9 +149,11 @@
     width:1px!important;
 }
 .accessibility,
+%accessibility,
 .visuallyhidden{
     @include accessibility;
 }
+
 @if $responsive{
     @each $state in $breakpoints{
         @include grid-media-query(#{$state}){

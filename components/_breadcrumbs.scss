@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    $BREADCRUMBS
+\*------------------------------------*/
+
+.breadcrumb{
+	@extend %small-text;
+}
+
+    .breadcrumb > li:after{
+        content:"\002F" "\00A0";
+    }

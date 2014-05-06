@@ -13,7 +13,7 @@
 %vertical-rhythm {
     @extend %reset;
     margin-bottom: $base-spacing-unit;
-    margin-bottom: $base-spacing-unit + rem;
+    margin-bottom: $base-spacing-ratio + rem;
 }
 
 
@@ -43,7 +43,7 @@ hgroup, p,
 ul,ol,dl,
 address,table,
 fieldset,figure,
-pre, hr,
+pre,
 /**
  * Objects and abstractions
  */
@@ -52,8 +52,6 @@ pre, hr,
 .island,
 .islet{
 	@extend %vertical-rhythm; 
-    margin-bottom: $base-spacing-unit;
-    margin-bottom: $base-spacing-unit + rem;
 }
 
 
@@ -62,9 +60,15 @@ pre, hr,
  * treatment regarding vertical rhythm.
  */
 hr{
-	@extend %vertical-rhythm; 
-	@include spacing(margin-top);
-}
+    @if ($enable-margins--large == true) {
+	    @extend %me+;
+    }
+    
+    @else{
+         margin-top: $base-spacing-unit * 2 !important; 
+         margin-bottom:  $base-spacing-unit * 2 !important; 
+    }
+} 
 
 
 /**

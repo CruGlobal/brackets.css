@@ -19,16 +19,31 @@
     display:block;
     @extend .cf;
 }
+
+    %media__img--width{        
+        @include mq(1000px){
+            max-width: 25%;
+        }
+    }
+    
     .media__img{
-        float:left;
-        margin-right:$base-spacing-unit;
+        @extend %media__img--width;
+        
+        @include mq(1000px){
+            float:left;
+            margin-right: $base-spacing-unit;
+        }
     }
     /**
      * Reversed image location (right instead of left).
      */
     .media__img--rev{
-        float:right;
-        margin-left:$base-spacing-unit;
+        @extend %media__img--width;
+        
+        @include mq(1000px){
+            float:right;
+            margin-left: $base-spacing-unit;
+        }
     }
 
         .media__img img,
@@ -43,7 +58,10 @@
         .media__body > :last-child{
             margin-bottom:0;
         }
-
+    
+        .grid__item.media{
+            @extend %mb0;
+        }
 
 
 }//endif
