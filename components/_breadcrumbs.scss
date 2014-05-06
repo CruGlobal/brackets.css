@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .breadcrumb{
-	font-size: 80%;
+	@extend %small-text;
 }
 
     .breadcrumb > li:after{

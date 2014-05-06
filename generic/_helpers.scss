@@ -21,11 +21,12 @@
 
 
 /**
- * Text alignment
+ * Text alignment and sizing
  */
 .text--left,   %text--left       { text-align:left  !important; }
 .text--center, %text--center     { text-align:center!important; }
 .text--right,  %text--right      { text-align:right !important; }
+.small-text, %small-text         { font-size: 80%; }
 
 
 /**
