@@ -64,7 +64,6 @@ legend{
 	
 	font-size: $base-font-size * 0.875;
 	line-height: $base-line-height;
-	vertical-align: middle;
 	
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
 	border: 2px solid $base-ui-color;

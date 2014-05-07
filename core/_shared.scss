@@ -65,8 +65,8 @@ hr{
     }
     
     @else{
-         margin-top: $base-spacing-unit * 2 !important; 
-         margin-bottom:  $base-spacing-unit * 2 !important; 
+         margin-top: $base-spacing-unit * 2; 
+         margin-bottom:  $base-spacing-unit * 2; 
     }
 } 
 

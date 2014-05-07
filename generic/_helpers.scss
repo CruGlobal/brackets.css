@@ -7,7 +7,7 @@
  * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
  * that ruleset as opposed to adding the `.float--left` class to the markup.
  *
- * A lot of these classes carry `!important` as you will always want them to win
+ * A lot of these classes carry `` as you will always want them to win
  * out over other selectors.
  */
 
@@ -15,9 +15,9 @@
 /**
  * Add/remove floats
  */
-.float--right, %float--right    { float:right!important; }
-.float--left,  %float--left     { float:left !important; }
-.float--none,  %float--none     { float:none !important; }
+.float--right, %float--right    { float:right; }
+.float--left,  %float--left     { float:left ; }
+.float--none,  %float--none     { float:none ; }
 
 
 /**
@@ -26,17 +26,17 @@
 .text--left,   %text--left       { text-align:left; }
 .text--center, %text--center     { text-align:center; }
 .text--right,  %text--right      { text-align:right; }
-.small-text, %small-text         { font-size: 80%; }
+.small-text,   %small-text       { font-size: 80%; }
 
 
 /**
  * Font weights
  */
-.weight--light,      %weight--light       { font-weight:100!important; }
-.weight--semi-light, %weight--semilight   { font-weight:300!important; }
-.weight--normal,     %weight--normal      { font-weight:400!important; }
-.weight--semibold,   %weight--semibold    { font-weight:500!important; }
-.weight--bold,       %weight--bold        { font-weight:600!important; }
+.weight--light,      %weight--light       { font-weight:100; }
+.weight--semi-light, %weight--semilight   { font-weight:300; }
+.weight--normal,     %weight--normal      { font-weight:400; }
+.weight--semibold,   %weight--semibold    { font-weight:500; }
+.weight--bold,       %weight--bold        { font-weight:600; }
 
 /**
  * View helpers
@@ -51,7 +51,10 @@
 .position--absolute, %position--absolute { position: absolute; }
 .position--relative, %position--relative { position: relative; }
 .position--fixed,    %position--fixed    { position: fixed; }
-
+.position--t0,       %position--t0       { top: 0;}
+.position--b0,       %position--b0       { bottom: 0; }
+.position--l0,       %position--l0       { left: 0; }
+.position--r0,       %position--r0       { right: 0;}
 
 /**
  * Display
@@ -87,12 +90,12 @@
  * Pull items full width of `.island` parents.
  */
 .full-bleed{
-    margin-right:-$base-line-height !important;
-    margin-left: -$base-line-height !important;
+    margin-right:-$base-line-height ;
+    margin-left: -$base-line-height ;
 
     .islet &{
-        margin-right:-($base-line-height / 2)!important;
-        margin-left: -($base-line-height / 2)!important;
+        margin-right:-($base-line-height / 2);
+        margin-left: -($base-line-height / 2);
     }
 }
 
@@ -102,7 +105,7 @@
  * `:hover`.
  */
 .informative, %informative{
-    cursor:help!important;
+    cursor:help;
 }
 
 
@@ -110,8 +113,8 @@
  * Mute an object by reducing its opacity.
  */
 .muted, %muted{
-    opacity:0.5!important;
-    filter:alpha(opacity = 50)!important;
+    opacity:0.5;
+    filter:alpha(opacity = 50);
 }
 
 
@@ -122,7 +125,7 @@
  *
  */
 .go:after, .go:after{
-    content:"\00A0" "\00BB"!important;
+    content:"\00A0" "\00BB";
 }
 
 
@@ -130,7 +133,7 @@
  * Apply capital case to an element (usually a `strong`).
  */
 .caps, %caps{
-    text-transform:uppercase!important;
+    text-transform:uppercase;
 }
 
 
@@ -139,14 +142,14 @@
  * breakpoint specific hidden elements.
  */
 @mixin accessibility{
-    border:0!important;
-    clip:rect(0 0 0 0)!important;
-    height:1px!important;
-    margin:-1px!important;
-    overflow:hidden!important;
-    padding:0!important;
-    position: absolute!important;
-    width:1px!important;
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position: absolute;
+    width:1px;
 }
 .accessibility,
 %accessibility,

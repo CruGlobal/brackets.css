@@ -76,8 +76,6 @@ $sizeValue: strip-units($base-font-size);
 @mixin box-sizing($boxmodel) {
   -webkit-box-sizing: $boxmodel;
      -moz-box-sizing: $boxmodel;
-	  -ms-box-sizing: $boxmodel;
-	   -o-box-sizing: $boxmodel;
           box-sizing: $boxmodel;
 }
 
