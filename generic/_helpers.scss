@@ -59,29 +59,25 @@
 /**
  * Display
  */
-.display--block, %display--block{ display: block;}
-.display--inline-block, %display--inline-block{ display: inline-block;}
-.display--inline, %display--inline{ display: inline;}
-.display--none, %display--none{display: none;}
+.display--block, %display--block               { display: block;}
+.display--inline-block, %display--inline-block { display: inline-block;}
+.display--inline, %display--inline             { display: inline;}
+.display--none, %display--none                 { display: none;}
 
 
 /**
  * Sizes
  */
-.full-height, %full-height{height: 100%;}
-.full-width, %full-width{width: 100%;}
+.full-height, %full-height {height: 100%;}
+.full-width, %full-width   {width: 100%;}
 
 /**
  * Content Alignment
  */
-%centered, .centered{ margin-left: auto; margin-right: auto;}
+%centered, .centered, 
+.center, %center { margin-left: auto; margin-right: auto;}
 
-%center-block, .center-block{
-	@extend %center;
-	
-	width: 100%;
-	text-align: center;
-}
+%center-block, .center-block           { @extend %centered; @extend %full-width; @extend %text--center; }
 
 
 
@@ -151,6 +147,7 @@
     position: absolute;
     width:1px;
 }
+
 .accessibility,
 %accessibility,
 .visuallyhidden{
@@ -166,20 +163,4 @@
             }
         }
     }
-}
-
-
-/**
- * Content Alignment
- */
-%center, .centered{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-%center-block, .center-block{
-	@extend %center;
-	
-	width: 100%;
-	text-align: center;
 }

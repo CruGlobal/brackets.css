@@ -147,6 +147,7 @@ $query-unit: 16px;
         .lt-ie9 & {
             @content;
         }
+        
         @media screen and (#{$query1}-#{$query2}: strip-units($point) / strip-units($query-unit) + em) {
             @content;
         }
@@ -166,6 +167,7 @@ $query-unit: 16px;
     content: " "; /* 1 */
     display: table; /* 2 */
   }
+  
   &:after {
     clear: both;
   }
@@ -244,11 +246,13 @@ $query-unit: 16px;
     background-color: darken($background, 8%);
         border-color: darken($border, 12%);
   }
+  
   &:active,
   &.active,
   .open &.dropdown-toggle {
     background-image: none;
   }
+  
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
@@ -281,6 +285,7 @@ $query-unit: 16px;
 // -------------------------
 @mixin panel-variant($border, $bg-color) {
   border-color: $border;
+  
   & > .panel-header {
     background-color: $bg-color;
     border-color: $border;
@@ -310,11 +315,13 @@ $query-unit: 16px;
 
 @mixin form-control-focus($color: $input-border-focus) {
   $color-rgba: rgba(red($color), green($color), blue($color), .6);
+  
   &:focus {
     border-color: $color;
     outline: 0;
     //@include box-shadow(unquote("inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #{$color-rgba}"));
   }
+  
 }
 
 
@@ -326,14 +333,17 @@ $query-unit: 16px;
   border-top-right-radius: $radius;
    border-top-left-radius: $radius;
 }
+
 @mixin border-right-radius($radius) {
   border-bottom-right-radius: $radius;
      border-top-right-radius: $radius;
 }
+
 @mixin border-bottom-radius($radius) {
   border-bottom-right-radius: $radius;
    border-bottom-left-radius: $radius;
 }
+
 @mixin border-left-radius($radius) {
   border-bottom-left-radius: $radius;
      border-top-left-radius: $radius;
@@ -348,7 +358,6 @@ $query-unit: 16px;
  * Includes active and focus for accessibility 
  * 
  */
-
 @mixin psuedo(){
 	&:hover, &:focus, &:active{
 		@content;

@@ -50,10 +50,10 @@ $base-font-family:             sans-serif !default;
 /**
  * Default colours for objects’ borders etc.
  */
-$base-background-color:        #ffffff !default;
-$base-text-color:              #444444 !default;
-$base-ui-color:                #CCCCCC !default;
-$base-accent-color:            #007CB1 !default;
+$base-background-color:        #fff    !default;
+$base-text-color:              #444    !default;
+$base-ui-color:                #ccc    !default;
+$base-accent-color:            #007cb1 !default;
 
 /**
  * Default value for edges and such
@@ -85,7 +85,7 @@ $header-font-ratio:            1.414 !default;
 
 
 	/* Header sizes */
-	$h6-font-size:             $base-font-size * 0.8 !default;
+	$h6-font-size:             $base-font-size * .8 !default;
 	$h5-font-size:             $base-font-size !default;
 	$h4-font-size:             $base-font-size * $header-font-ratio !default; 
 	$h3-font-size: 			   $h4-font-size   * $header-font-ratio !default;
@@ -227,10 +227,15 @@ $link-font-color-hover:        darken($base-accent-color, 5%) !default;
  * a mixin to help you generate these easily
  */
 $btn-font-size:                16px;
+
 $btn-default-min-height:       40px;
 $btn-default-color:            $base-text-color !default;
 $btn-default-bg:               $base-ui-color !default;
 $btn-default-border:           darken($base-ui-color, 5%) !default;
+
+$btn-positive-bg:              #4a993e;
+
+$btn-negative-bg:              #b33630;
 
 
 

@@ -26,13 +26,14 @@
      */
     .pagination{
         margin-bottom: $base-line-height;
-        text-align:center;
+        text-align: center;
         /**
          * Remove whitespace caused by `inline-block`.
          */
-        letter-spacing:-0.31em;
-        word-spacing:-0.43em;
+        letter-spacing: -.31em;
+        word-spacing: -.43em;
     }
+    
         .pagination li{
             letter-spacing:normal;
             word-spacing:normal;
@@ -42,6 +43,7 @@
                 margin: 0;
                 @include rem-calc(padding, 8px 22px);
             }
+            
                 .pagination__prev{               
                     a:before{
                         content:"\00AB" "\00A0";

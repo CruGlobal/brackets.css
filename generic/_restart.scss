@@ -23,13 +23,6 @@ ins{
     border-bottom:1px solid;
 }
 
-/**
- * So that `alt` text is visually offset if images don’t load.
- */
-img{
-    font-style:italic;
-}
-
 
 /**
  * Give form elements some cursor interactions...
@@ -42,6 +35,7 @@ select,
 option{
     cursor:pointer;
 }
+
     .text-input:active,
     .text-input:focus,
     textarea:active,
@@ -80,13 +74,19 @@ a {
 img {
   vertical-align: middle;
   max-width: 100%; /* Set images to the full width of parent */
+  /**
+   * So that `alt` text is visually offset if images don’t load.
+   */
+  font-style:italic;
+  
 }
 
 // Horizontal rules
 
 hr {
-  border: 0;
-  border-top: 1px solid #dddddd;
+    @extend %ui-border-0;
+    @extend %ui-border-t1; 
+    @extend %color-border-ui;
 }
 
 

@@ -16,7 +16,7 @@
  *
  */
 .media{
-    display:block;
+    @extend %display--block;
     @extend .cf;
 }
 
@@ -34,6 +34,7 @@
             margin-right: $base-spacing-unit;
         }
     }
+    
     /**
      * Reversed image location (right instead of left).
      */
@@ -48,15 +49,16 @@
 
         .media__img img,
         .media__img--rev img{
-            display:block;
+            @extend %display--block;
         }
 
     .media__body{
         overflow:hidden;
     }
+    
         .media__body,
         .media__body > :last-child{
-            margin-bottom:0;
+            @extend %m0;
         }
     
         .grid__item.media{

@@ -102,9 +102,11 @@ legend{
 .form-fields{
     @extend .block-list;
 }
+
     .form-fields > li{
         @extend %margin-bottom;
     }
+    
     .form-fields > li:last-child{
         margin-bottom:0;
     }
@@ -142,6 +144,7 @@ label,
     display:block;
 	@include rem-calc(margin-bottom, 6px);
 }
+
     /**
      * Extra help text in `label`s, e.g.:
      *
@@ -181,6 +184,7 @@ label,
 .check-list{
     @extend .block-list;
 }
+
     /*
      * Labels in check-lists
      */
@@ -234,6 +238,7 @@ label,
     visibility:hidden;
 	max-height: 0;
 }
+
 .text-input:active + .form-help,
 .text-input:focus + .form-help{
     visibility:visible;
