@@ -86,8 +86,8 @@ $enable-paddings--none:   false !default;
 	.mr+, %mr+    { margin-right: $base-margin * 2 !important;  }
 	.mb+, %mb+    { margin-bottom:$base-margin * 2 !important;  }
 	.ml+, %ml+    { margin-left:  $base-margin * 2 !important;  }
-	.me+, %me+    { margin-top: $base-margin * 2 !important; margin-bottom:  $base-margin * 2 !important; }    
-	.ms+, %ms+    { margin-right:   $base-margin * 2 !important; margin-left: $base-margin * 2 !important; }
+	.me+, %me+    { margin-top:   $base-margin * 2 !important; margin-bottom:  $base-margin * 2 !important; }    
+	.ms+, %ms+    { margin-right: $base-margin * 2 !important; margin-left: $base-margin * 2 !important; }
 }
 
 
