@@ -96,13 +96,18 @@ $sizeValue: strip-units($base-font-size);
 }
 
 @mixin double-spacing($property) {
-    #{$property}: 2 * $base-spacing-unit;
-    #{$property}: 2 * $base-spacing-ratio + rem;
+    #{$property}: double($base-spacing-unit);
+    #{$property}: double($base-spacing-ratio) + rem;
 }
 
 @mixin half-spacing($property) {
-    #{$property}: $base-spacing-unit / 2;
-    #{$property}: ($base-spacing-ratio / 2) + rem;
+    #{$property}: halve($base-spacing-unit);
+    #{$property}: halve($base-spacing-ratio) + rem;
+}
+
+@mixin quarter-spacing($property) {
+    #{$property}: quarter($base-spacing-unit);
+    #{$property}: quarter($base-spacing-ratio) + rem;
 }
 
 
@@ -113,7 +118,7 @@ $sizeValue: strip-units($base-font-size);
  *
    .foo{
        @include headings(1, 3){
-           color:#BADA55;
+           color:#c0ffee;
        }
     }
  *
