@@ -17,7 +17,8 @@
 .island,
 .islet{
     @extend %cf;
-    @extend %display--block;
+    
+    display: block;
 }
 
 .island{

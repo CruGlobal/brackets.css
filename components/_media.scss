@@ -16,8 +16,8 @@
  *
  */
 .media{
-    @extend %display--block;
-    @extend .cf;
+    @extend %cf;
+    display: block;
 }
 
     %media__img--width{        
@@ -49,11 +49,11 @@
 
         .media__img img,
         .media__img--rev img{
-            @extend %display--block;
+            display: block;
         }
 
     .media__body{
-        overflow:hidden;
+        overflow: hidden;
     }
     
         .media__body,
