@@ -51,3 +51,19 @@ $rem-base: 			16px !default;
 @function em-calc($values){
   @return rem-calc($values);
 }
+
+@function quarter($value) {
+    @return round($value / 4);
+}
+
+@function half($value) {
+    @return round($value / 2);
+}
+
+@function double($value) {
+    @return round($value * 2);
+}
+
+@function quadruple($value) {
+    @return round($value * 4);
+}

@@ -6,8 +6,15 @@
  * them at all. 
  */
 
-
-
+@import "mixins/alerts";
+@import "mixins/border-radius";
+@import "mixins/buttons";
+@import "mixins/center-block";
+@import "mixins/clearfix";
+@import "mixins/forms";
+@import "mixins/grids";
+@import "mixins/images";
+@import "mixins/opacity";
 
 /**
  * Quickly generate a font-size in rems, with a pixel fallback, based on the
@@ -166,15 +173,6 @@ $query-unit: 16px;
 }
 
 
-@mixin clearfix() {
-    &:after {
-         content: "";
-         display: table;
-         clear: both;
-     }
-}
-
-
 /**
  * Create vendor-prefixed CSS in one go, e.g.
  *
@@ -219,56 +217,8 @@ $query-unit: 16px;
           user-select: $select;
 }
 
-// Opacity
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  // IE8 filter
-  $opacity-ie: ($opacity * 100);
-  filter: unquote("alpha(opacity=#{$opacity-ie})");
-}
 
 
-
-// Button variants
-// -------------------------
-// Easily pump out default styles, as well as :hover, :focus, :active,
-// and disabled options for all buttons
-@mixin button-variant($color, $background, $border) {
-  color: $color;
-  background-color: $background;
-  border-color: $border;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &.active,
-  .open &.dropdown-toggle {
-    color: $color;
-    background-color: darken($background, 8%);
-        border-color: darken($border, 12%);
-  }
-  
-  &:active,
-  &.active,
-  .open &.dropdown-toggle {
-    background-image: none;
-  }
-  
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      background-color: $background;
-      border-color: $border;
-	  cursor: not-allowed;
-	  pointer-events: none; // Future-proof disabling of clicks
-    }
-  }
-}
 
 // Message variants
 // -------------------------
@@ -325,29 +275,56 @@ $query-unit: 16px;
   
 }
 
+/*------------------------------------*\
+    CSS3 PROPERTIES
+\*------------------------------------*/
 
-// CSS3 PROPERTIES
-// --------------------------------------------------
-
-// Single side border-radius
-@mixin border-top-radius($radius) {
-  border-top-right-radius: $radius;
-   border-top-left-radius: $radius;
+/**
+ * Border Radius
+ */
+ 
+/* Top-Left Corner */
+@mixin border-top-left-radius($radius: $default-border-radius) {
+    @include border-corner-radius(top, left, $radius); 
+}
+ 
+/* Top-Right Corner Only*/
+@mixin border-top-right-radius($radius: $default-border-radius) {
+    @include border-corner-radius(top, right, $radius); 
 }
 
-@mixin border-right-radius($radius) {
-  border-bottom-right-radius: $radius;
-     border-top-right-radius: $radius;
+/* Bottom-Left Corner Only */
+@mixin border-bottom-left-radius($radius: $default-border-radius) {
+    @include border-corner-radius(bottom, left, $radius); 
 }
 
-@mixin border-bottom-radius($radius) {
-  border-bottom-right-radius: $radius;
-   border-bottom-left-radius: $radius;
+/* Bottom-Right Corner Only */
+@mixin border-bottom-right-radius($radius: $default-border-radius) {
+    @include border-corner-radius(bottom, right, $radius); 
 }
 
-@mixin border-left-radius($radius) {
-  border-bottom-left-radius: $radius;
-     border-top-left-radius: $radius;
+/* Both Top Corners */
+@mixin border-top-radius($radius: $default-border-radius) {
+  @include border-top-left-radius($radius);
+  @include border-top-right-radius($radius); 
+}
+
+/* Both Right Corners */
+@mixin border-right-radius($radius: $default-border-radius) {
+  @include border-top-right-radius($radius);
+  @include border-bottom-right-radius($radius); 
+}
+
+/* Both Bottom Corners */
+@mixin border-bottom-radius($radius: $default-border-radius) {
+  @include border-bottom-left-radius($radius);
+  @include border-bottom-right-radius($radius); 
+}
+
+ /* Both Left Corners */
+@mixin border-left-radius($radius: $default-border-radius) {
+  @include border-top-left-radius($radius);
+  @include border-bottom-left-radius($radius); 
 }
 
 

@@ -84,9 +84,9 @@ img {
 // Horizontal rules
 
 hr {
-    @extend %ui-border-0;
-    @extend %ui-border-t1; 
-    @extend %color-border-ui;
+    border: 0;
+    border-top: 1px solid;
+    border-color: #e9e9e9;
 }
 
 

@@ -48,7 +48,7 @@ html {
 	 */
     @if $show-baseline == true {
 
-        $baseline-size: strip-units($magic-number);
+        $baseline-size: strip-units($base-spacing-unit);
 
         background-image: url(http://basehold.it/i/#{$baseline-size}); /* [3] */
     }

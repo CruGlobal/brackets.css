@@ -60,14 +60,8 @@ pre,
  * treatment regarding vertical rhythm.
  */
 hr{
-    @if ($enable-margins--large == true) {
-	    @extend %me+;
-    }
-    
-    @else{
-         margin-top: $base-spacing-unit * 2; 
-         margin-bottom:  $base-spacing-unit * 2; 
-    }
+    margin-top: $base-spacing-unit * 2; 
+    margin-bottom:  $base-spacing-unit * 2; 
 } 
 
 
