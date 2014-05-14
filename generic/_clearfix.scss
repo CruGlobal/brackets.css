@@ -7,9 +7,8 @@
  * over and over in your markup.
  */
 .cf, %cf{
-    &:after {
-         content: "";
-         display: table;
-         clear: both;
-     }
+    @include clearfix;
+    
+    /* To used once support is verified */
+    /* @include clearfix-new; */
 }

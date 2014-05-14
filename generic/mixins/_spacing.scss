@@ -1,9 +1,14 @@
+/*------------------------------------*\
+    $MIXINS/SPACING
+\*------------------------------------*/
+
 /**
  *  Calculates any number of margins and paddings in one swoop
  * 
  * Running this is as easy 
  * @include vertical-calc(1, 12) {}
  *
+ * DO NOT USE AT THE MOMENT
  */
 $base-vertical-grid: $base-spacing-unit / 4;
 

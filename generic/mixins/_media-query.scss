@@ -8,6 +8,9 @@
  */
 $query-unit: 16px;
 
+/**
+ * Set $query1: max for a max-qidth query, defaults to min-width
+ */
 @mixin mq( $point, $query1: min, $query2: width, $IE9: false) {
     @if $IE9 == true{
         .lt-ie9 & {
