@@ -162,3 +162,8 @@
         }
     }
 }
+
+
+.basic-transition, %basic-transition{ @include vendor(transition, 250ms ease) }
+
+.decoration--none, %decoration--none{ text-decoration: none; }

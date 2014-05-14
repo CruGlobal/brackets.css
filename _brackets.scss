@@ -43,29 +43,9 @@
  * BUTTONS.............Use the beautons micro library
  * ISLAND..............Boxed off content
  * NAVS................A simple abstraction to put a list in horizontal nav mode
-
-
- * FLEXBOX.............Crudely emulate flexbox
- * COLUMNS.............CSS3 columns
- * NAV.................A simple abstraction to put a list in horizontal nav mode
- * OPTIONS.............Grouped nav items
  * PAGINATION..........Very stripped back, basic paginator
  * BREADCRUMB..........Simple breadcrumb trail object
  * MEDIA...............Media object
- * MARGINALIA..........Simple marginalia content
- * BLOCK-LIST..........Blocky lists of content
- * MATRIX..............Gridded lists
- * SPLIT...............A simple split-in-two object
- * THIS-OR-THIS........Options object
- * LINK-COMPLEX........
- * FLYOUT..............Flyout-on-hover object
- * ARROWS..............CSS arrows
- * SPRITE..............Generic spriting element
- * ICON-TEXT...........Icon and text couplings
- * LOZENGES............Basic lozenge styles
- * RULES...............Horizontal rules
- * STATS...............Simple stats object
- * GREYBOX.............Wireframing styles
  *
  * HELPERS.............A series of helper classes to use arbitrarily
  * DEBUG...............Enable to add visual flags for debugging purposes
@@ -130,25 +110,10 @@
 @import "components/navs";
 @import "components/pagination";
 @import "components/breadcrumbs";
-//@import "components/messages";
-//@import "components/panels";
-//@import "components/close";
-//@import "button-groups";
-//@import "input-groups";
-//@import "navbar";
-//@import "pager";
-//@import "labels";
-//@import "badges";
-//@import "jumbotron";
-//@import "thumbnails";
-//@import "progress-bars";
 @import "components/media";
-//@import "list-group";
-//@import "panels";
-//@import "wells";
 
 /**
  * Style trumps; helper and brand classes
  */
 @import "generic/spacing";
-@import "generic/helpers"; 
+//@import "generic/helpers"; 
