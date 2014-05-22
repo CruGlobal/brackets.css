@@ -27,3 +27,11 @@ img[height]{
 	padding: 4px;
 	border: 1px solid $base-ui-color;
 }
+
+/**
+ * Images in list.
+ */
+.img--list { 
+	float: left;
+	border: 3px;
+}
