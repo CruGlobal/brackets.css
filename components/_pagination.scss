@@ -30,37 +30,59 @@
         /**
          * Remove whitespace caused by `inline-block`.
          */
-        letter-spacing: -.31em;
-        word-spacing: -.43em;
+        //letter-spacing: -.31em;
+        //word-spacing: -.43em;
     }
     
         .pagination li{
             letter-spacing:normal;
             word-spacing:normal;
-        } 
+            display: inline;
+        }
+
+        .pagination li a {
+            padding: 3px 8px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-radius: 4px;
+            color: #666062;
+            @include rem-calc(padding, 4px 14px);
+            @include rem-calc(margin, 8px 4px);
+
+            &:hover, &:focus {
+                background: #f0f0f0;
+                border-color: #ccc;
+                color: #666062;
+            }
+            &:active {
+                background: #fff;
+                border-color: #ddd;
+            }
+        }
             
             %pagination-button{
                 margin: 0;
-                @include rem-calc(padding, 8px 22px);
             }
-            
-                .pagination__prev{               
+                .pagination__prev{
+                    & > .button {
+                        margin: 0;
+                    }
+
                     a:before{
                         content:"\00AB" "\00A0";
                     }
                 }
-
-                
                 .pagination__next{
                     & > .button{
-                        @extend %pagination-button;  
+                        margin: 0;
                     }
                     
                     a:after{
                         content:"\00A0" "\00BB";
                     }
                 }
-                
                 .current > a{
                     pointer-events: none;
                     cursor: text;
