@@ -167,3 +167,9 @@
 .basic-transition, %basic-transition{ @include vendor(transition, 250ms ease) }
 
 .decoration--none, %decoration--none{ text-decoration: none; }
+
+.debug{ background-color: #007cb1}
+
+.box-shadown--thin {
+  @include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
+}
