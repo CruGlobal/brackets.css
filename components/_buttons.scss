@@ -43,8 +43,8 @@
      * remains uniform.
 	 */    
 	&--small{               
-		line-height: 1.75;
-        @include rem-calc(padding, 8px 22px);
+
+        @include rem-calc(padding, 2px 6px);
 	}
 
 	&--large{

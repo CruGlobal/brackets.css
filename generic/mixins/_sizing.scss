@@ -81,3 +81,7 @@ $sizeValue: strip-units($base-font-size);
     #{$property}: quarter($base-spacing-ratio) + rem;
 }
 
+@mixin eighth-spacing($property) {
+  #{$property}: eighth($base-spacing-unit);
+  #{$property}: eighth($base-spacing-ratio) + rem;
+}
