@@ -78,6 +78,12 @@
 %center-block, .center-block           { @extend %centered; @extend %full-width; @extend %text--center; }
 
 
+/**
+ * Borders
+ */
+.border-bottom-solid {
+    border-bottom: 1px solid lighten($color-black, 40%); 
+}
 
 
 /**
