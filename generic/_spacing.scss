@@ -81,13 +81,13 @@ $enable-paddings--none:   false !default;
 	/**
 	 * Large Margins.
 	 */
-	.m+,  %m+     { margin:        double($base-margin) ;  }
-	.mt+, %mt+    { margin-top:    double($base-margin) ;  }
-	.mr+, %mr+    { margin-right:  double($base-margin) ;  }
-	.mb+, %mb+    { margin-bottom: double($base-margin) ;  }
-	.ml+, %ml+    { margin-left:   double($base-margin) ;  }
-	.me+, %me+    { margin-top:    double($base-margin) ; margin-bottom:  double($base-margin) ; }    
-	.ms+, %ms+    { margin-right:  double($base-margin) ; margin-left: double($base-margin) ; }
+	.m_x,  %m_x     { margin:        double($base-margin) ;  }
+	.mt_x, %mt_x    { margin-top:    double($base-margin) ;  }
+	.mr_x, %mr_x    { margin-right:  double($base-margin) ;  }
+	.mb_x, %mb_x    { margin-bottom: double($base-margin) ;  }
+	.ml_x, %ml_x    { margin-left:   double($base-margin) ;  }
+	.me_x, %me_x    { margin-top:    double($base-margin) ; margin-bottom:  double($base-margin) ; }
+	.ms_x, %ms_x    { margin-right:  double($base-margin) ; margin-left: double($base-margin) ; }
 }
 
 
@@ -96,13 +96,13 @@ $enable-paddings--none:   false !default;
 	/**
 	 * Huge Margins.
 	 */
-	.m++,  %m++    { margin:       quadruple($base-margin) ;  }
-	.mt++, %mt++   { margin-top:   quadruple($base-margin) ;  }
-	.mr++, %mr++   { margin-right: quadruple($base-margin) ;  }
-	.mb++, %mb++   { margin-bottom:quadruple($base-margin) ;  }
-	.ml++, %ml++   { margin-left:  quadruple($base-margin) ;  }
-	.ms++, %ms++   { margin-top:   quadruple($base-margin) ; margin-bottom: quadruple($base-margin) ; }
-	.me++, %me++   { margin-right: quadruple($base-margin) ; margin-left:  quadruple($base-margin) ; }
+	.m_xx,  %m_xx    { margin:       quadruple($base-margin) ;  }
+	.mt_xx, %mt_xx   { margin-top:   quadruple($base-margin) ;  }
+	.mr_xx, %mr_xx   { margin-right: quadruple($base-margin) ;  }
+	.mb_xx, %mb_xx   { margin-bottom:quadruple($base-margin) ;  }
+	.ml_xx, %ml_xx   { margin-left:  quadruple($base-margin) ;  }
+	.ms_xx, %ms_xx   { margin-top:   quadruple($base-margin) ; margin-bottom: quadruple($base-margin) ; }
+	.me_xx, %me_xx   { margin-right: quadruple($base-margin) ; margin-left:  quadruple($base-margin) ; }
 	
 }
 
@@ -177,13 +177,13 @@ $enable-paddings--none:   false !default;
 	/**
 	 * Large paddings.
 	 */
-	.p+,  %p+   { padding:        double($base-padding) ; }
-	.pt+, %pt+  { padding-top:    double($base-padding) ; }
-	.pr+, %pr+  { padding-right:  double($base-padding) ; }
-	.pb+, %pb+  { padding-bottom: double($base-padding) ; }
-	.pl+, %pl+  { padding-left:   double($base-padding) ; }
-	.pe+, %pe+  { padding-top:    double($base-padding) ; padding-bottom: double($base-padding) ; }
-	.ps+, %ps+  { padding-right:  double($base-padding) ; padding-left:   double($base-padding) ; }
+	.p_x,  %p_x   { padding:        double($base-padding) ; }
+	.pt_x, %pt_x  { padding-top:    double($base-padding) ; }
+	.pr_x, %pr_x  { padding-right:  double($base-padding) ; }
+	.pb_x, %pb_x  { padding-bottom: double($base-padding) ; }
+	.pl_x, %pl_x  { padding-left:   double($base-padding) ; }
+	.pe_x, %pe_x  { padding-top:    double($base-padding) ; padding-bottom: double($base-padding) ; }
+	.ps_x, %ps_x  { padding-right:  double($base-padding) ; padding-left:   double($base-padding) ; }
 	
 }
 
@@ -192,13 +192,13 @@ $enable-paddings--none:   false !default;
 	/**
 	 * Huge paddings.
 	 */
-	.p++,  %p++   { padding:        quadruple($base-padding) ; }
-	.pt++, %pt++  { padding-top:    quadruple($base-padding) ; }
-	.pr++, %pr++  { padding-right:  quadruple($base-padding) ; }
-	.pb++, %pb++  { padding-bottom: quadruple($base-padding) ; }
-	.pl++, %pl++  { padding-left:   quadruple($base-padding) ; }
-	.pe++, %pe++  { padding-top:    quadruple($base-padding) ; padding-bottom: quadruple($base-padding) ; }
-	.ps++, %ps++  { padding-right:  quadruple($base-padding) ; padding-left:   quadruple($base-padding) ; }
+	.p_xx,  %p_xx   { padding:        quadruple($base-padding) ; }
+	.pt_xx, %pt_xx  { padding-top:    quadruple($base-padding) ; }
+	.pr_xx, %pr_xx  { padding-right:  quadruple($base-padding) ; }
+	.pb_xx, %pb_xx  { padding-bottom: quadruple($base-padding) ; }
+	.pl_xx, %pl_xx  { padding-left:   quadruple($base-padding) ; }
+	.pe_xx, %pe_xx  { padding-top:    quadruple($base-padding) ; padding-bottom: quadruple($base-padding) ; }
+	.ps_xx, %ps_xx  { padding-right:  quadruple($base-padding) ; padding-left:   quadruple($base-padding) ; }
 	
 }
 
