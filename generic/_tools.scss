@@ -11,6 +11,14 @@ $rem-base: 			16px !default;
 	@return $num / ($num * 0 + 1);
 }
 
+/**
+ * This allows us to use the rem-calc mixin for shorthand 
+ * conversions.
+ */
+@function parseInt($n) { /* 2 */
+  @return $n / ($n * 0 + 1);
+}
+
 @function convert-to-rem($value, $base-value: $rem-base)  {
   $value: strip-units($value) / strip-units($base-value) * 1rem;
   @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
